@@ -14,7 +14,7 @@ In addition, Boten Anna aims to leverage various APIs and provide features for d
 
 ## Pre-Requisites
 
-[Instructions on how to install and set up the project]
+[Instructions on how to set up the project]
 
 ## config.json
 
