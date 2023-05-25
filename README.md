@@ -1,25 +1,26 @@
-# boten anna
+# Boten Anna
 
-[Project description and overview]
+Boten Anna is a Discord bot being developed using node.js in conjunction with discord.js module and axios.
+
+The primary goal of this project is to learn and gain hands-on experience in node.js development and web development in general.
+
+In addition, Boten Anna aims to leverage various APIs and provide features for data retrieval, Discord server management, entertainment, and more.
 
 ## Table of Contents
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+- [Pre-Requisites](#Pre-Requisites)
+- [Setting the bot in your local enviroment](#Setting the bot in your local enviroment)
+- [Commands](#usage)
 
-## Installation
+
+## Pre-Requisites
 
 [Instructions on how to install and set up the project]
 
-## Usage
+## Setting the bot in your local enviroment
 
 [Instructions on how to use the project, along with examples or code snippets]
 
-## Contributing
+## Commands
 
-[Guidelines for contributing to the project, including information on how to submit pull requests or report issues]
+[Commands]
 
-## License
-
-[Information about the project's license and any relevant copyright notices]
