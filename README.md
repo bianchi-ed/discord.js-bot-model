@@ -8,18 +8,22 @@ In addition, Boten Anna aims to leverage various APIs and provide features for d
 
 ## Table of Contents
 - [Pre-Requisites](#Pre-Requisites)
-- [Config.json](#config.json)
-- [Start-Bot](#Start-Bot)
-- [Commands](#Commands)
+- [config.json](#config.json)
+- [Execution](#Execution)
+- [Usage](#Commands)
 
 ## Pre-Requisites
 
 [Instructions on how to install and set up the project]
 
-## Setting the bot in your local enviroment
+## config.json
 
-[Instructions on how to use the project, along with examples or code snippets]
+[config.json]
 
-## Commands
+## Execution
 
-[Commands]
+[Execution]
+
+## Usage
+
+[Usage]
