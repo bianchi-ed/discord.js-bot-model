@@ -12,7 +12,8 @@ module.exports = {
 		
 		//Time-out target member
 		await user.timeout(60_000).catch(err => {
-			interaction.reply({content: "There was an error while running the command", ephemeral: true})
+			interaction.reply({content: "There was an error while running the command. Please verify the provided inputs", ephemeral: true})
+            return
 		})
 
 		await interaction.reply(`The user ${user} was time-outed for 1 minute.`)
