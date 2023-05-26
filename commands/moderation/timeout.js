@@ -15,6 +15,6 @@ module.exports = {
 			interaction.reply({content: "There was an error while running the command", ephemeral: true})
 		})
 
-		await interaction.reply(`The user ${user} is time-outed for 1 minute.`)
+		await interaction.reply(`The user ${user} was time-outed for 1 minute.`)
 	},
 };
