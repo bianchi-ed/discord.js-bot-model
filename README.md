@@ -1,4 +1,4 @@
-# Boten Anna (Readme.me in construction)
+# Boten Anna (README.MD in construction)
 
 Boten Anna is a Discord Bot being developed using node.js in conjunction with discord.js and axios.
 
