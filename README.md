@@ -79,6 +79,11 @@ To start the bot, you can simply run the command "node index.js"
 
 ![image](https://github.com/chromeosenjoyer/boten-anna/assets/134458207/c4abb15f-29e7-4c91-aed4-a949662e3699)
 
+If everything went well, you should see your bot online in your server.
+
+![image](https://github.com/chromeosenjoyer/boten-anna/assets/134458207/bb099016-b987-401b-8c0a-ba5ae924f817)
+
+
 ## Usage
 
 [Usage]
