@@ -14,9 +14,9 @@ In addition, Boten Anna aims to leverage various APIs and provide features for d
 
 ## Pre-Requisites
 
-This project uses node.js in conjunction with discord.js and axios. 
+This project is currently not deployed anywhere, so creating a discord bot app will be necessary if you choose to run it. In case you are not sure how to do this, I strongly recommend reading the first step of official Discord Guide: ["Building your first Discord app"](https://discord.com/developers/docs/getting-started#step-1-creating-an-app).
 
-It is possible to download node.js at: https://nodejs.org/en/download
+This project uses node.js in conjunction with discord.js and axios. It is possible to download node.js at: https://nodejs.org/en/download
 
 After downloading and installing node.js be sure to run the following commands:
 
