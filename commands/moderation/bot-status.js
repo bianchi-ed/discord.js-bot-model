@@ -24,7 +24,7 @@ module.exports = {
 			await interaction.reply(`My status is now: ${status}`)
 		} catch (error) {
 			console.error('An error occurred:', error);
-			await interaction.reply(`There was an error during the status change. Please check the provided status: "${status}"`)
+			await interaction.reply(`There was an error during the status change.`)
 		}
 	},
 };
