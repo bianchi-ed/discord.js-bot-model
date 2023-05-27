@@ -38,10 +38,12 @@ Since the config.json contains sensitive information, it is listed on git.ignore
 If you dont know where to find your token, clientId or guildId, [check out the oficcial discord.js guide for more information.](https://discordjs.guide/). 
 
 ```json
+{
 	"token": "Your bot Token goes here",
-  	"clientId": "Your application application ID goes here",
+	"clientId": "Your application application ID goes here",
 	"guildId": "This is your server ID ",
 	"freeCurrencyApiKey": "FreeCurrency API KEY"
+}
 ```
 
 ## Execution
