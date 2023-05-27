@@ -14,7 +14,20 @@ In addition, Boten Anna aims to leverage various APIs and provide features for d
 
 ## Pre-Requisites
 
-[Instructions on how to set up the project]
+This project uses node.js in conjunction with discord.js and axios. 
+
+It is possible to download node.js at: https://nodejs.org/en/download
+
+After downloading and installing node.js be sure to run the following commands:
+
+```bash
+$ npm install discord.js
+```
+and
+
+```bash
+$ npm install axios
+```
 
 ## config.json
 
