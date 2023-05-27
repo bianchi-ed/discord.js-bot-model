@@ -4,7 +4,7 @@ Boten anna is a discord Bot template being developed using node.js in conjunctio
 
 The first goal of this project is to study and gain hands-on experience in node.js development and web development in general.
 
-The second goal is to present a customizable Discord Bot template that includes fundamental moderation and utility commands. Additionally, it features a dynamic folder structure, which promotes better organization of commands and events for enhanced usability. This template also creates a workspace that simplifies the implementation and maintenance of new commands, ensuring ease of adaptability.
+The second goal is to explore the discord.js functionalities and provide a customizable Discord Bot template that includes fundamental moderation and utility commands. Additionally, it contains a dynamic folder structure, which promotes better organization of commands and events for enhanced usability. This template also creates a workspace that simplifies the implementation and maintenance of new commands, ensuring ease of adaptability.
 
 ## Pre-Requisites
 
