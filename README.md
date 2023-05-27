@@ -46,7 +46,7 @@ Since the config.json contains sensitive information, it is listed on git.ignore
 
 You can find your token, applicationId on the discord application page. The guildId is the ID of the Discord server.
 
-Here is a good place to store information such as API keys.
+Feel free to add more data to this file. It is a good place to store information such as API keys.
 
 ## Execution
 TOPIC
