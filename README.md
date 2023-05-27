@@ -14,11 +14,10 @@ The second goal is to present a user-friendly and customizable Discord Bot Blue-
 
 ## Pre-Requisites
 
-The first step to set up the Bot is to create a Discord bot app. In case you are not sure about how to do this, I recommend reading at least this step of official Discord.js Guide: [Building your first Discord app](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot).
+### Node & Libs
+This project uses Node.js in conjunction with discord.js and axios. It is possible to [Download Node.js from the official website](https://nodejs.org/en/download). Currently, boten anna is being developed using Node.js v18.16.0 and Discord.js v14
 
-This project uses Node.js in conjunction with discord.js and axios. It is possible to [Download Node.js from the official website](https://nodejs.org/en/download)
-
-After downloading and installing node.js be sure to run the following commands:
+After downloading and installing node.js be sure to install Discord.js and axios using the following commands:
 
 ```bash
 $ npm install discord.js
@@ -28,6 +27,9 @@ and
 ```bash
 $ npm install axios
 ```
+
+### Discord Application
+The first step to set up the Bot is to create a Discord bot app. In case you are not sure about how to do this, I recommend reading this step of official Discord.js Guide: [Building your first Discord app](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot).
 
 ## config.json
 
