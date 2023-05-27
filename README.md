@@ -14,7 +14,7 @@ The second goal is to present a customizable Discord Bot template that includes 
 
 ## Pre-Requisites
 
-### Node & Libs
+### 1. Node & Libs
 This project uses Node.js in conjunction with discord.js and axios. It is possible to [Download Node.js from the official website](https://nodejs.org/en/download). Boten Anna is being implemented using Node.js v18.16.0 and  Discord.js v14.
 
 After downloading and installing node.js be sure to install discord.js and axios:
@@ -28,16 +28,16 @@ and
 $ npm install axios
 ```
 
-### Discord Application
+### 2. Discord Application
 The first step to set up the Bot is to create a Discord Application, if you already have a Discord Application created you can skip this sub-topic. 
 
 In case you do not know how to create a Discord Application, I recommend reading this step of official Discord.js Guide: [Building your first Discord app](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot).
 
-### Invite your Bot (Discord Application) to your discord server
+### 3. Invite your Bot (Discord Application) to your discord server
 Invite your new (assuming that you just created one) bot to your discrod channel using the invite url present on the Discord Application page. If you do not know what is an invite url, or how to get one, please read [this topic from the official discord.js guide](https://discordjs.guide/preparations/adding-your-bot-to-servers.html#bot-invite-links).
 
 ## config.json
-Config.json is used to store data that you probably would not like to share. 
+config.json is used to store data that you probably would not like to share. 
 
 Since the config.json contains sensitive information it is listed on git.ignore. The first thing you need to do after the initial Node.js setup is to create a file named **"config.json"** in the root folder of the project and populate it with the following information.
 
