@@ -13,7 +13,8 @@ module.exports = {
 		}
 
 		try {
-			await command.execute(interaction);
+			//passing the interaction.client as parameter ensures that we can execute tasks like changing the bot status
+			await command.execute(interaction, interaction.client);
 		} catch (error) {
 			console.error(`Error executing ${interaction.commandName}`);
 			console.error(error);
