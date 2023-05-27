@@ -6,12 +6,6 @@ The first goal of this project is to study and gain hands-on experience in node.
 
 The second goal is to present a customizable Discord Bot template that includes fundamental moderation and utility commands. Additionally, it features a dynamic folder structure, which promotes better organization of commands and events for enhanced usability. This template also creates a workspace that simplifies the implementation and maintenance of new commands, ensuring ease of adaptability.
 
-## Table of Contents
-- [Pre-Requisites](#Pre-Requisites)
-- [config.json](#config.json)
-- [Firing up the Bot](## Firing up the Bot)
-- [Usage](#Commands)
-
 ## Pre-Requisites
 
 ### 1. Node & Libs
