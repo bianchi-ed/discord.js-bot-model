@@ -44,8 +44,8 @@ Since the config.json contains sensitive information it is listed on git.ignore.
 ```json
 {
 	"token": "Your bot Token goes here",
-	"clientId": "Your application application ID goes here",
-	"guildId": "This is your server ID "
+	"clientId": "Your Discord Application application ID goes here",
+	"guildId": "This is your Discord server ID "
 }
 ```
 
