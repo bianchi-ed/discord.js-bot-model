@@ -9,7 +9,7 @@ The second goal is to present a customizable Discord Bot template that includes 
 ## Table of Contents
 - [Pre-Requisites](#Pre-Requisites)
 - [config.json](#config.json)
-- [Firing up the Bot](#Firing up the Bot)
+- [Firing up the Bot](## Firing up the Bot)
 - [Usage](#Commands)
 
 ## Pre-Requisites
