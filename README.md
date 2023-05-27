@@ -35,7 +35,7 @@ Since the config.json contains sensitive information, it is listed on git.ignore
 
 **About guildID** - We currently use this parameter only to register the slashcommands on the target server. If by any chance you are deploying this application anywhere, you can use the exact same deploy-command script, changing the route to .applicationCommands(clientId).
 
-If you dont know where to find your token, clientId or guildId, [check out the oficcial discord.js guide for more information.](https://discordjs.guide/). 
+If you dont know where to find your token, clientId or guildId, [check out the oficcial discord.js guide for more information](https://discordjs.guide/). 
 
 ```json
 {
