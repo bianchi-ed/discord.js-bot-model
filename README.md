@@ -44,7 +44,7 @@ Since the config.json contains sensitive information, it is listed on git.ignore
 }
 ```
 
-You can find your token, applicationId on the discord application page. The guildId is the ID of the server you are currently using.
+You can find your token, applicationId on the discord application page. The guildId is the ID of the Discord server.
 
 ## Execution
 TOPIC
