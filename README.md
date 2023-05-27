@@ -39,7 +39,7 @@ Invite your new (assuming that you just created one) to your channel using the i
 ## config.json
 Config.json is used to store data that you probably would not like to share. 
 
-Since the config.json contains sensitive information it is listed on git.ignore. The first thing you need should do after the initial Node.js setup is to create a file named **"config.json"** in the root folder of the project and populate it with the following information.
+Since the config.json contains sensitive information it is listed on git.ignore. The first thing you need to do after the initial Node.js setup is to create a file named **"config.json"** in the root folder of the project and populate it with the following information.
 
 ```json
 {
