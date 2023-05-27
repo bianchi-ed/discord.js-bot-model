@@ -74,10 +74,10 @@ To:
 
 **Important:** Everytime you change or create a new command for your bot you should run the script **"deploy-commands.js"** to make sure your command will execute the most recent instruction. It is recommended to create a new script to deploy your commands globally.
 
+### 2. Start application
+To start the bot, you can simply run the command "node index.js"
 
-
-
-[Execution]
+![image](https://github.com/chromeosenjoyer/boten-anna/assets/134458207/c4abb15f-29e7-4c91-aed4-a949662e3699)
 
 ## Usage
 
