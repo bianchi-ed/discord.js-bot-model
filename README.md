@@ -14,7 +14,7 @@ The second goal is to present a user-friendly and customizable Discord Bot Blue-
 
 ## Pre-Requisites
 
-This project is currently not deployed anywhere, so creating a discord bot app will be necessary if you choose to run it. In case you are not sure how to do this, I strongly recommend reading at least this step of official Discord.js Guide: [Building your first Discord app](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot).
+The first step to set up the Bot is to create a Discord bot app. In case you are not sure about how to do this, I recommend reading at least this step of official Discord.js Guide: [Building your first Discord app](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot).
 
 This project uses Node.js in conjunction with discord.js and axios. It is possible to [Download Node.js from the official website](https://nodejs.org/en/download)
 
