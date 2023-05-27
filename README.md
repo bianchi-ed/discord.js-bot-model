@@ -31,13 +31,15 @@ $ npm install axios
 
 ## config.json
 
-Since the config.json contains sensitive information, the first thing you need should do after the initial Node.js setup is to create a file named "config.json" in the root folder of the project and populate it with the following information.
+Since the config.json contains sensitive information, it is listed on git.ignore. The first thing you need should do after the initial Node.js setup is to create a file named "config.json" in the root folder of the project and populate it with the following information.
 
 **About guildID** - We currently use this parameter only to register the slashcommands on the target server. If by any chance you are deploying this application anywhere, you can use the exact same deploy-command script, changing the route to .applicationCommands(clientId).
 
+If you dont know where to find your token, clientId or guildId, [check out the oficcial discord.js guide for more information.](https://discordjs.guide/). 
+
 ```json
 	"token": "Your bot Token goes here",
-  "clientId": "Your application application ID goes here",
+  	"clientId": "Your application application ID goes here",
 	"guildId": "This is your server ID ",
 	"freeCurrencyApiKey": "FreeCurrency API KEY"
 ```
