@@ -22,15 +22,15 @@ and
 $ npm install axios
 ```
 
-### 2. Discord Application
+### - Discord Application
 The first step to set up the Bot is to create a Discord Application, if you already have a Discord Application created you can skip this sub-topic. 
 
 In case you do not know how to create a Discord Application, I recommend reading this step of official Discord.js Guide: [Building your first Discord app](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot).
 
-### 3. Invite your Bot (Discord Application) to your discord server
+### - Invite your Bot (Discord Application) to your discord server
 Invite your new (assuming that you just created one) bot to your discrod channel using the invite url present on the Discord Application page. If you do not know what is an invite url, or how to get one, please read [this topic from the official discord.js guide](https://discordjs.guide/preparations/adding-your-bot-to-servers.html#bot-invite-links).
 
-## config.json
+## Configuration File
 config.json is used to store data that you probably would not like to share. 
 
 Since the config.json contains sensitive information it is listed on git.ignore. The first thing you need to do after the initial Node.js setup is to create a file named **"config.json"** in the root folder of the project and populate it with the following information.
@@ -50,7 +50,7 @@ Feel free to add more data to this file. It is a good place to store information
 ## Firing up the Bot
 Now that we have finished the basic setup, we can start the bot. To do that, follow the steps:
 
-### 1. Register the commands into the discord server locally
+### - Register the commands into the discord server locally
 If you have created a new Discord Application, you should register the commands that comes with boten anna locally, or globally.
 
 To do that you can simply run the script "deploy-commands.js" present in the root folder of the project.
@@ -68,7 +68,7 @@ To:
 
 **Important:** Everytime you change or create a new command for your bot you should run the script **"deploy-commands.js"** to make sure your command will execute the most recent instruction. It is recommended to create a new script to deploy your commands globally.
 
-### 2. Start application
+### - Start application
 To start the bot, you can simply run the command "node index.js"
 
 ![image](https://github.com/chromeosenjoyer/boten-anna/assets/134458207/c4abb15f-29e7-4c91-aed4-a949662e3699)
@@ -76,8 +76,3 @@ To start the bot, you can simply run the command "node index.js"
 If everything went well, you should see your bot online in your server.
 
 ![image](https://github.com/chromeosenjoyer/boten-anna/assets/134458207/bb099016-b987-401b-8c0a-ba5ae924f817)
-
-
-## Usage
-
-[Usage]
