@@ -34,7 +34,7 @@ The first step to set up the Bot is to create a Discord Application, if you alre
 In case you do not know how to create a Discord Application, I recommend reading this step of official Discord.js Guide: [Building your first Discord app](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot).
 
 ### Invite your Bot (Discord Application) to your channel
-Invite your new (assuming that you just created one) to your channel using the invite url present on the Discord Application page. If you do not know what is an invite url, or how to get one, please read [this topic from the official discord.js guide](https://discordjs.guide/preparations/adding-your-bot-to-servers.html#bot-invite-links)
+Invite your new (assuming that you just created one) to your channel using the invite url present on the Discord Application page. If you do not know what is an invite url, or how to get one, please read [this topic from the official discord.js guide](https://discordjs.guide/preparations/adding-your-bot-to-servers.html#bot-invite-links).
 
 ## config.json
 Config.json is used to store data that you probably would not like to share. 
@@ -53,8 +53,17 @@ You can find your token, applicationId on the discord application page. The guil
 
 Feel free to add more data to this file. It is a good place to store information such as API keys.
 
-## Execution
-TOPIC
+## Firing up the Bot
+Now that we have finished the basic setup, we can start the bot. To do that, follow the steps:
+
+###Registering the commands into the discord server locally
+If you have created a new Discord Application, you should register the commands that comes with boten anna locally, or globally. 
+
+To do that you can simply run the script "deploy-commands.js" present in the root folder of the project.
+
+
+
+
 
 [Execution]
 
