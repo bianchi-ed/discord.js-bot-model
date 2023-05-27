@@ -39,7 +39,7 @@ Invite your new (assuming that you just created one) to your channel using the i
 ## config.json
 Config.json is used to store data that you probably would not like to share. 
 
-Since the config.json contains sensitive information it is listed on git.ignore. The first thing you need should do after the initial Node.js setup is to create a file named "config.json" in the root folder of the project and populate it with the following information.
+Since the config.json contains sensitive information it is listed on git.ignore. The first thing you need should do after the initial Node.js setup is to create a file named **"config.json"** in the root folder of the project and populate it with the following information.
 
 ```json
 {
@@ -63,7 +63,7 @@ To do that you can simply run the script "deploy-commands.js" present in the roo
 
 ![image](https://github.com/chromeosenjoyer/boten-anna/assets/134458207/aa350dbc-8f6f-4bbb-ba4c-24be2f0a62fe)
 
-You can deploy your commands just for a discord server, or to the entire application. By default boten anna deploys the commands just locally. If you want to deploy your commands to the entire Discord Application, you can just change the route on the "deploy-commands.js" from this:
+You can deploy your commands just for a discord server, or to the entire application. By default boten anna deploys the commands just locally. If you want to deploy your commands to the entire Discord Application, you can just change the route on the **"deploy-commands.js"** from this:
 
 ![image](https://github.com/chromeosenjoyer/boten-anna/assets/134458207/a468c0f2-7481-4efb-a710-cc36fc51f1c1)
 
@@ -72,7 +72,7 @@ To this:
 ![image](https://github.com/chromeosenjoyer/boten-anna/assets/134458207/62f2ab5e-b0bf-4866-ae55-a8ed2e292196)
 
 
-**Important:** Everytime you change or create a new command for your bot you should run the script "deploy-commands.js" to make sure your command will execute the most recent instruction.
+**Important:** Everytime you change or create a new command for your bot you should run the script **"deploy-commands.js"** to make sure your command will execute the most recent instruction.
 
 
 
