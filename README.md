@@ -14,11 +14,37 @@ In addition, Boten Anna aims to leverage various APIs and provide features for d
 
 ## Pre-Requisites
 
-[Instructions on how to set up the project]
+This project is currently not deployed anywhere, so creating a discord bot app will be necessary if you choose to run it. In case you are not sure how to do this, I strongly recommend reading at least this step of official Discord.js Guide: ["Building your first Discord app"](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot).
+
+This project uses Node.js in conjunction with discord.js and axios. It is possible to ["Download Node.js from the official website"](https://nodejs.org/en/download)
+
+After downloading and installing node.js be sure to run the following commands:
+
+```bash
+$ npm install discord.js
+```
+and
+
+```bash
+$ npm install axios
+```
 
 ## config.json
 
-[config.json]
+Since the config.json contains sensitive information, it is listed on git.ignore. The first thing you need should do after the initial Node.js setup is to create a file named "config.json" in the root folder of the project and populate it with the following information.
+
+**About guildID** - We currently use this parameter only to register the slashcommands on the target server. If by any chance you are deploying this application anywhere, you can use the exact same deploy-command script, changing the route to .applicationCommands(clientId).
+
+If you dont know where to find your token, clientId or guildId, [check out the oficcial discord.js guide for more information](https://discordjs.guide/). 
+
+```json
+{
+	"token": "Your bot Token goes here",
+	"clientId": "Your application application ID goes here",
+	"guildId": "This is your server ID ",
+	"freeCurrencyApiKey": "FreeCurrency API KEY"
+}
+```
 
 ## Execution
 
