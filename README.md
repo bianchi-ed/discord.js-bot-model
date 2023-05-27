@@ -63,7 +63,7 @@ To do that you can simply run the script "deploy-commands.js" present in the roo
 
 ![image](https://github.com/chromeosenjoyer/boten-anna/assets/134458207/aa350dbc-8f6f-4bbb-ba4c-24be2f0a62fe)
 
-You can deploy your commands just for a discord server, or to the entire application. By default boten anna deploys the commands just locally. If you want to deploy your commands to the entire Discord Application, you can just change the route on the **"deploy-commands.js"** from:
+You can deploy your commands just for a discord server, or to the entire application. By default the current register script deploys the commands just locally. If you want to deploy your commands to the entire Discord Application, you can just change the route on the **"deploy-commands.js"** from:
 
 ![image](https://github.com/chromeosenjoyer/boten-anna/assets/134458207/a468c0f2-7481-4efb-a710-cc36fc51f1c1)
 
