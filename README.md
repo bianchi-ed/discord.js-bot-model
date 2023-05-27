@@ -72,7 +72,7 @@ To this:
 ![image](https://github.com/chromeosenjoyer/boten-anna/assets/134458207/62f2ab5e-b0bf-4866-ae55-a8ed2e292196)
 
 
-**Important:** Everytime you change or create a new command for your bot you should run the script **"deploy-commands.js"** to make sure your command will execute the most recent instruction.
+**Important:** Everytime you change or create a new command for your bot you should run the script **"deploy-commands.js"** to make sure your command will execute the most recent instruction. It is recommended to create a new script to deploy your commands globally.
 
 
 
