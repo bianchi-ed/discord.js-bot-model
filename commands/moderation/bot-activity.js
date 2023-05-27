@@ -3,7 +3,7 @@ const { SlashCommandBuilder, PermissionFlagsBits, ActivityType } = require('disc
 module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('bot-activity')
-		.setDescription('Change bot current activity.')
+		.setDescription('Set bot activity.')
 		.addStringOption(option => option
 			.setName('activity')
 			.setDescription('Current activity.')
@@ -54,9 +54,9 @@ module.exports = {
                 default:
                     break;
             }
-
             client.user.setActivity(title, { type: typeActivity });
             await interaction.reply(`My activity was changed. I am now ${activity}: ${title}`)
+            
 		} catch (error) {
             console.log(error)
 			await interaction.reply(`There was an error while changing the bot activity`)
