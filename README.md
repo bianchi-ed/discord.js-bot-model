@@ -8,7 +8,7 @@ The second goal is to present a customizable Discord Bot template that includes 
 
 ## Pre-Requisites
 
-### 1. Node & Libs
+### - Node & Libs
 This project uses Node.js in conjunction with discord.js and axios. It is possible to [Download Node.js from the official website](https://nodejs.org/en/download). Boten Anna is being implemented using Node.js v18.16.0 and  Discord.js v14.
 
 After downloading and installing node.js be sure to install discord.js and axios:
