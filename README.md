@@ -1,10 +1,10 @@
-# Boten Anna (Readme.me in construction)
+# Boten Anna (README.MD in construction)
 
 Boten Anna is a Discord Bot being developed using node.js in conjunction with discord.js and axios.
 
-The primary goal of this project is to learn and gain hands-on experience in node.js development and web development in general.
+The first goal of this project is to study and gain hands-on experience in node.js development and web development in general.
 
-In addition, Boten Anna aims to leverage various APIs and provide features for data retrieval, Discord server management, entertainment, and more.
+The second goal is to present a user-friendly and customizable Discord Bot Blue-Print that includes fundamental moderation and utility commands. Additionally, it features a dynamic folder structure, which promotes better organization of commands and events for enhanced usability. Furthermore, this blueprint creates an environment that simplifies the implementation and maintenance of new commands, ensuring ease of adaptability.
 
 ## Table of Contents
 - [Pre-Requisites](#Pre-Requisites)
@@ -14,9 +14,9 @@ In addition, Boten Anna aims to leverage various APIs and provide features for d
 
 ## Pre-Requisites
 
-This project is currently not deployed anywhere, so creating a discord bot app will be necessary if you choose to run it. In case you are not sure how to do this, I strongly recommend reading at least this step of official Discord.js Guide: ["Building your first Discord app"](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot).
+The first step to set up the Bot is to create a Discord bot app. In case you are not sure about how to do this, I recommend reading at least this step of official Discord.js Guide: [Building your first Discord app](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot).
 
-This project uses Node.js in conjunction with discord.js and axios. It is possible to ["Download Node.js from the official website"](https://nodejs.org/en/download)
+This project uses Node.js in conjunction with discord.js and axios. It is possible to [Download Node.js from the official website](https://nodejs.org/en/download)
 
 After downloading and installing node.js be sure to run the following commands:
 
@@ -41,8 +41,7 @@ If you dont know where to find your token, clientId or guildId, [check out the o
 {
 	"token": "Your bot Token goes here",
 	"clientId": "Your application application ID goes here",
-	"guildId": "This is your server ID ",
-	"freeCurrencyApiKey": "FreeCurrency API KEY"
+	"guildId": "This is your server ID "
 }
 ```
 
