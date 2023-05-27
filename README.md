@@ -56,11 +56,23 @@ Feel free to add more data to this file. It is a good place to store information
 ## Firing up the Bot
 Now that we have finished the basic setup, we can start the bot. To do that, follow the steps:
 
-### 1. Registering the commands into the discord server locally
-If you have created a new Discord Application, you should register the commands that comes with boten anna locally, or globally. 
+### 1. Register the commands into the discord server locally
+If you have created a new Discord Application, you should register the commands that comes with boten anna locally, or globally.
 
 To do that you can simply run the script "deploy-commands.js" present in the root folder of the project.
 
+![image](https://github.com/chromeosenjoyer/boten-anna/assets/134458207/aa350dbc-8f6f-4bbb-ba4c-24be2f0a62fe)
+
+You can deploy your commands just for a discord server, or to the entire application. By default boten anna deploys the commands just locally. If you want to deploy your commands to the entire Discord Application, you can just change the route on the "deploy-commands.js" from this:
+
+![image](https://github.com/chromeosenjoyer/boten-anna/assets/134458207/a468c0f2-7481-4efb-a710-cc36fc51f1c1)
+
+To this:
+
+![image](https://github.com/chromeosenjoyer/boten-anna/assets/134458207/62f2ab5e-b0bf-4866-ae55-a8ed2e292196)
+
+
+**Important:** Everytime you change or create a new command for your bot you should run the script "deploy-commands.js" to make sure your command will execute the most recent instruction.
 
 
 
