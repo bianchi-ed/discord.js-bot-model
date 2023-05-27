@@ -16,8 +16,7 @@ Boten Anna is being implemented using Node.js v18.16.0 and  Discord.js v14.
 
 ## Pre-Requisites
 
-This project is currently not deployed anywhere, so creating a discord bot app will be necessary if you choose to run it. In case you are not sure how to do this, I strongly recommend reading at least this step of official Discord.js Guide: [Building your first Discord app](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot).
-
+### Node & Libs
 This project uses Node.js in conjunction with discord.js and axios. It is possible to [Download Node.js from the official website](https://nodejs.org/en/download)
 
 After downloading and installing node.js be sure to run the following commands:
@@ -30,6 +29,11 @@ and
 ```bash
 $ npm install axios
 ```
+
+### Discord Application
+The first step to set up the Bot is to create a Discord Application, if you already have a Discord Application created you can skip this sub-topic. 
+
+In case you dont know how to create a Discord Application, I recommend reading this step of official Discord.js Guide: [Building your first Discord app](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot).
 
 ## config.json
 Config.json is used to store data that you probably would not like to share. 
