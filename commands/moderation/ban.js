@@ -2,19 +2,19 @@ const { SlashCommandBuilder, PermissionFlagsBits } = require('discord.js');
 
 module.exports = {
 	data: new SlashCommandBuilder()
-		.setName('kick')
-		.setDescription('Kick a member.')
+		.setName('ban')
+		.setDescription('Ban a member.')
 		.addUserOption(option => option.setName('target-user').setDescription('Target user'))
-		.setDefaultMemberPermissions(PermissionFlagsBits.KickMembers),
+		.setDefaultMemberPermissions(PermissionFlagsBits.BanMembers),
 	async execute(interaction) {
-		//Fetch user information
+		//read input
 		const user = interaction.options.getMember('target-user');
 		
-		//kick target member
-		await user.kick().catch(err => {
+		//ban
+		await user.ban().catch(err => {
 			interaction.reply({content: "There was an error while running the command"})
 		})
 
-		await interaction.reply(`The user ${user} was kicked from this channel.`)
+		await interaction.reply(`The user ${user} was banned from this channel.`)
 	},
 };

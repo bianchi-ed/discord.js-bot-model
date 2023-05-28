@@ -7,12 +7,12 @@ module.exports = {
 		.addUserOption(option => option.setName('target-user').setDescription('Target user'))
 		.setDefaultMemberPermissions(PermissionFlagsBits.KickMembers),
 	async execute(interaction) {
-		//Fetch user information
+		//read input
 		const user = interaction.options.getMember('target-user');
 		
-		//Time-out target member
+		//time out member
 		await user.timeout(60_000).catch(err => {
-			interaction.reply({content: "There was an error while running the command. Please verify the provided inputs", ephemeral: true})
+			interaction.reply({content: "There was an error while running the command. Please verify the provided inputs"})
             return
 		})
 
