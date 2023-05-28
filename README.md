@@ -109,7 +109,7 @@ To create a new command you can just create a .js file inside one of the command
 
 After you have created the .js file, you can write your own instructions. 
 
-This is where you can get very creative. The discord.js class SlashCommandBuilder provides a set of methods so you can create very customizable commands. You should read the topic [Advanced command creation from the official discord.js guide ](https://discordjs.guide/slash-commands/advanced-creation.html#adding-options) to learn more about the usage of this class.
+This is where you can get very creative. The discord.js class SlashCommandBuilder provides a set of methods so you can create very customizable commands. You can find more about the SlashCommand class [in this link from discord.js docs](https://old.discordjs.dev/#/docs/builders/main/class/SlashCommandBuilder) to learn more about the usage of this class.
 
 Here is an example of a command that changes the bot's current status:
 
