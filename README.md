@@ -6,7 +6,7 @@ The first goal of this project is to study and gain hands-on experience in node.
 
 The secondary purpose of this project is to provide a versatile and well-structured skeleton code for building your own Discord bot. With a modular architecture, you can easily organize and customize the bot to suit different server contexts and requirements. The provided command model simplifies the creation and management of commands, allowing you to develop new functionalities tailored specifically to your server's needs.
 
-This model already includes some commonly used moderation and utility commands, providing a starting point for your bot's functionality and allowing you the freedom to create new commands that integrate into diverse server contexts.
+This project already contains some commonly used moderation and utility commands, providing a starting point for your bot's functionality and allowing you the freedom to create new commands that integrate into diverse server contexts.
 
 As a study case, I will continue to create new commands that may fit different discord server contexts.
 
