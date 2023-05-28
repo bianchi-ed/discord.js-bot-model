@@ -6,7 +6,7 @@ module.exports = {
 		.setDescription('Set bot status.')
 		.addStringOption(option => option
 			.setName('status')
-			.setDescription('Possible options: online, idle, dnd, idle')
+			.setDescription('Change the status of the bot.')
 			.setRequired(true)
 			.addChoices(
 				{ name: 'online', value: 'online' },
