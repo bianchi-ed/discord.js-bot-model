@@ -29,15 +29,15 @@ $ npm install axios
 ### - Discord Application
 The first step to set up the Bot is to create a Discord Application, if you already have a Discord Application created you can skip this sub-topic. 
 
-In case you do not know how to create a Discord Application, I recommend reading this step of official Discord.js Guide: [Setting up a bot application](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot).
+In case you do not know how to create a Discord Application, I recommend reading this step from the Discord.js Guide: [Setting up a bot application](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot).
 
 ### - Invite your Bot (Discord Application) to your discord server
-Invite your new (assuming that you just created one) bot to your discrod channel using the invite url present on the Discord Application page. If you do not know what is an invite url, or how to get one, please read [this topic from the official discord.js guide](https://discordjs.guide/preparations/adding-your-bot-to-servers.html#bot-invite-links).
+Invite your new (assuming that you just created one) bot to your discrod channel using the invite url present on the Discord Application page. If you do not know what is an invite url, or how to get one, check out this topic from the discord.js guide: [Adding your bot to servers](https://discordjs.guide/preparations/adding-your-bot-to-servers.html#bot-invite-links).
 
 ## Configuration File
 config.json is used to store data that you probably would not like to share. 
 
-Since the config.json contains sensitive information it is listed on git.ignore. The first thing you need to do after the initial Node.js setup is to create a file named **"config.json"** in the root folder of the project and populate it with the following information.
+Since the config.json contains sensitive information it is listed on git.ignore. The first thing you need to do after the initial Node.js setup is to create a file named **"config.json"** in the root folder of the project and populate it with the following information. this is also a good place to store information such as API keys.
 
 ```json
 {
@@ -48,8 +48,6 @@ Since the config.json contains sensitive information it is listed on git.ignore.
 ```
 
 You can find your token, applicationId on the discord application page. The guildId is the ID of the Discord server.
-
-this is also a good place to store information such as API keys.
 
 ## Firing up the Bot
 Now that we have finished the basic setup, we can start the bot. To do that, follow the steps:
