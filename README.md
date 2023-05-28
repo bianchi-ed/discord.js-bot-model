@@ -1,19 +1,19 @@
 # Boten Anna (README.MD in construction)
 
-Boten anna is a discord Bot template being developed using node.js in conjunction with discord.js and axios.
+Boten anna is a discord Bot template being developed using Node.js v18.16.0 and Discord.js v14..
 
 The first goal of this project is to study and gain hands-on experience in node.js development and web development in general.
 
 The secondary purpose of this project is to provide a skeleton code for building your own Discord bot. It contains a modular structure, so you can easily organize and customize the bot to suit different server contexts and requirements. The usage of SlashCommandBuilder simplifies the creation and management of commands and events, allowing you to develop new functionalities specifically to your server's context.
 
-This project already contains some commonly used moderation and utility commands, providing a starting point for your bot's functionality and allowing you the freedom to create new commands that integrate into diverse server contexts.
+This project already contains some commonly used moderation and utility commands, providing a starting point for your bot's functionality.
 
 As a study case, I will continue to create new commands that may fit different discord server contexts.
 
 ## Pre-Requisites
 
 ### - Node & Libs
-This project uses Node.js in conjunction with discord.js and axios. It is possible to [Download Node.js from the official website](https://nodejs.org/en/download). Boten Anna is being implemented using Node.js v18.16.0 and  Discord.js v14.
+This project uses Node.js in conjunction with discord.js and axios. It is possible to [Download Node.js from the official website](https://nodejs.org/en/download).
 
 After downloading and installing node.js be sure to install discord.js and axios:
 
