@@ -61,23 +61,23 @@ You can deploy your commands just for one discord server, or to the enteire appl
 
 ```javascript
 //...
+const data = await rest.put(
+	Routes.applicationGuildCommands(clientId, guildId),
+	{ body: commands },
+);
 //...
-	const data = await rest.put(
-		Routes.applicationGuildCommands(clientId, guildId),
-		{ body: commands },
-	);
-//..
-//..
 ```
 
 To:
 
 
 ```javascript
-	const data = await rest.put(
-		Routes.applicationCommands(clientId),
-		{ body: commands },
-	);
+//...
+const data = await rest.put(
+	Routes.applicationCommands(clientId),
+	{ body: commands },
+//...
+);
 ```
 
 
