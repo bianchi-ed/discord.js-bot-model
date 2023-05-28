@@ -76,8 +76,8 @@ To:
 const data = await rest.put(
 	Routes.applicationCommands(clientId),
 	{ body: commands },
-//...
 );
+//...
 ```
 
 
