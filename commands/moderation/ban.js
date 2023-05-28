@@ -15,6 +15,6 @@ module.exports = {
 			interaction.reply({content: "There was an error while running the command"})
 		})
 
-		await interaction.reply(`The user ${user} was banned from this channel.`)
+		await interaction.reply(`The user ${user} was banned from this server.`)
 	},
 };
