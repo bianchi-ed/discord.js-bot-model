@@ -101,8 +101,6 @@ If everything went well, you should see your bot online on your discord server.
 ## Creating new commands
 To create a new command you can just create a .js file inside one of the command categories folder, you can also create new category folders if you so choose. In this template we are using the class SlashCommandBuilder to create our commands. Its a very nice way to implement new commands since the class provides various methods to customize and configure commands.
 
- **Important: Command files always should stay inside a category folder, otherwise your bot is not going to start**.
-
 ![image](https://github.com/chromeosenjoyer/boten-anna/assets/134458207/beb590fc-d9d7-4276-8b43-056c2f1f0c77)
 
 After you have created the .js file, you can write your own instructions. 
