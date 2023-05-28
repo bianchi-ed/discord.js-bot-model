@@ -1,6 +1,6 @@
 # Discord.js Bot Model (README.MD in construction)
 
-This is a discord Bot template being developed using Node.js v18.16.0 and Discord.js v14. It was created based on the [Discord.js guide](https://discord.js.org/).
+This is a discord bot template being developed using Node.js v18.16.0 and Discord.js v14. It was created based on the [Discord.js guide](https://discord.js.org/).
 
 The first goal of this project is to study and gain hands-on experience in node.js development and web development in general.
 
