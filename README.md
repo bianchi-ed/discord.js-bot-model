@@ -55,7 +55,9 @@ If you have created a new Discord Application, you should register the commands 
 
 To do that you can simply run the script "deploy-commands.js" present in the root folder of the project.
 
-![image](https://github.com/chromeosenjoyer/boten-anna/assets/134458207/aa350dbc-8f6f-4bbb-ba4c-24be2f0a62fe)
+```base
+node deploy-commands.js
+```
 
 You can deploy your commands just for one discord server, or to the enteire application. The register script present in this project deploys the commands just locally. If you want to deploy your commands to the entire discord application, you can just change the route on the **"deploy-commands.js"** from:
 
