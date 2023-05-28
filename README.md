@@ -111,6 +111,8 @@ After you have created the .js file, you can write your own instructions.
 
 This is where you can get very creative. The discord.js class SlashCommandBuilder provides a set of methods so you can create very customizable commands. You should read the topic [Advanced command creation from the official discord.js guide ](https://discordjs.guide/slash-commands/advanced-creation.html#adding-options) to learn more about the usage of this class.
 
+Here is an example of a command that changes the bot's current status:
+
 ```javascript
 module.exports = {
 	data: new SlashCommandBuilder() 
@@ -141,8 +143,3 @@ module.exports = {
 	},
 };
 ```
-
-
-
- I really recommend you to read thee [official discord.js guide](https://discordjs.guide/#before-you-begin) to un
-
