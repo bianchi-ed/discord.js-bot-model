@@ -4,7 +4,7 @@ Boten anna is a discord Bot template being developed using node.js in conjunctio
 
 The first goal of this project is to study and gain hands-on experience in node.js development and web development in general.
 
-The secondary purpose of this project is to provide a versatile and well-structured skeleton code for building your own Discord bot. With a modular architecture, you can easily organize and customize the bot to suit different server contexts and requirements. The provided command model simplifies the creation and management of commands, allowing you to develop new functionalities tailored specifically to your server's needs.
+The secondary purpose of this project is to be a skeleton code for building your own Discord bot. It contains a modular structure, so you can easily organize and customize the bot to suit different server contexts and requirements. The usage of SlashCommandBuilder simplifies the creation and management of commands, allowing you to develop new functionalities specifically to your server's context.
 
 This project already contains some commonly used moderation and utility commands, providing a starting point for your bot's functionality and allowing you the freedom to create new commands that integrate into diverse server contexts.
 
