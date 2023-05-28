@@ -1,6 +1,6 @@
 # Boten Anna (README.MD in construction)
 
-Boten anna is a discord Bot template being developed using Node.js v18.16.0 and Discord.js v14..
+Boten anna is a discord Bot template being developed using Node.js v18.16.0 and Discord.js v14.
 
 The first goal of this project is to study and gain hands-on experience in node.js development and web development in general.
 
