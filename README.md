@@ -107,7 +107,7 @@ To create a new command you can just create a .js file inside one of the command
 
 After you have created the .js file, you can write your own instructions. 
 
-This is where you can get very creative. The discord.js class SlashCommandBuilder provides a set of methods so you can create very customizable commands. You can find more about the SlashCommand class [in this link from discord.js docs](https://old.discordjs.dev/#/docs/builders/main/class/SlashCommandBuilder).
+This is where you can get creative. The discord.js class SlashCommandBuilder provides a set of methods so you can create very customizable commands. You can find more about the SlashCommand class [in this link from discord.js docs](https://old.discordjs.dev/#/docs/builders/main/class/SlashCommandBuilder).
 
 Here is an example of a command to change the bot's current status on the discord server:
 
@@ -166,4 +166,28 @@ And here is the execution of the command in the discord server:
 
 ![image](https://github.com/chromeosenjoyer/boten-anna/assets/134458207/ac811e03-76d5-4224-99db-b5890b152910)
 
+## Handling events
 
+Discord.js allows to handle certain events such as a creation of a channel, or the moment when the bot goes online. Check out the entire [list of events from the discord.js docs](https://old.discordjs.dev/#/docs/discord.js/main/typedef/Events)
+
+In this project, similar to commands, you can create individual .js files to handle events. The event files should be created on the "events" folder.
+
+![image](https://github.com/chromeosenjoyer/boten-anna/assets/134458207/3114de45-66ab-4eb3-a59b-cf3abc873308)
+
+
+Here is an example of an event instruction that triggers when the bot goes online:
+
+```javascript
+
+//ready.js
+
+const { Events } = require('discord.js');
+
+module.exports = {
+	name: Events.ClientReady,
+	once: true,
+	execute(client) {
+		console.log(`Ready! Logged in as ${client.user.tag}`);
+	},
+};
+```
