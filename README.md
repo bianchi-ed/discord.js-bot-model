@@ -60,10 +60,14 @@ To do that you can simply run the script "deploy-commands.js" present in the roo
 You can deploy your commands just for one discord server, or to the enteire application. The register script present in this project deploys the commands just locally. If you want to deploy your commands to the entire discord application, you can just change the route on the **"deploy-commands.js"** from:
 
 ```javascript
+//...
+//...
 	const data = await rest.put(
 		Routes.applicationGuildCommands(clientId, guildId),
 		{ body: commands },
 	);
+//..
+//..
 ```
 
 To:
