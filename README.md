@@ -100,13 +100,49 @@ If everything went well, you should see your bot online on your discord server.
 
 ![image](https://github.com/chromeosenjoyer/boten-anna/assets/134458207/bb099016-b987-401b-8c0a-ba5ae924f817)
 
-## Bot Usage
-In this project we are using the class SlashCommandBuilder to create our commands. Its a very nice way to implement new commands since the class provides various methods to customize and configure our commads. It is very well presented on discord as you can see here:
+## Creating new commands
+To create a new command you can just create a .js file inside one of the command categories folder, you can also create new category folders if you so choose. In this template we are using the class SlashCommandBuilder to create our commands. Its a very nice way to implement new commands since the class provides various methods to customize and configure commands.
 
-![image](https://github.com/chromeosenjoyer/boten-anna/assets/134458207/4aa5cb19-cf83-4862-86a5-b801b5b245d5)
+ **Important: Command files always should stay inside a category folder, otherwise your bot is not going to start**.
 
-![image](https://github.com/chromeosenjoyer/boten-anna/assets/134458207/7f043691-ec0a-4f64-b346-d38626625019)
+![image](https://github.com/chromeosenjoyer/boten-anna/assets/134458207/beb590fc-d9d7-4276-8b43-056c2f1f0c77)
 
-![image](https://github.com/chromeosenjoyer/boten-anna/assets/134458207/421024e1-7c57-4c15-b5c0-af17fc9752bf)
+After you have created the .js file, you can write your own instructions. 
 
-![image](https://github.com/chromeosenjoyer/boten-anna/assets/134458207/0ec0133e-6ee9-4c98-ba51-c2925d9d1f70)
+This is where you can get very creative. The discord.js class SlashCommandBuilder provides a set of methods so you can create very customizable commands. You should read the topic [Advanced command creation from the official discord.js guide ](https://discordjs.guide/slash-commands/advanced-creation.html#adding-options) to learn more about the usage of this class.
+
+```javascript
+module.exports = {
+	data: new SlashCommandBuilder() 
+		.setName('bot-status') // Name that will be used to execute the command on discord (ex: /bot-status)
+		.setDescription('Set bot status.') // Description of the command 
+		.addStringOption(option => option // Optional String parameter, it can have other types
+			.setName('status') // Name of the parameter
+			.setDescription('Change the status of the bot.') // Parameter description
+			.setRequired(true) //If it is necessary to input this parameter in order to execute the command
+			.addChoices( //limite the input to these values:
+				{ name: 'online', value: 'online' },
+				{ name: 'idle', value: 'idle' },
+				{ name: 'dnd', value: 'dnd' },
+				{ name: 'invisible', value: 'invisible' },
+			)
+		)
+		.setDefaultMemberPermissions(PermissionFlagsBits.BanMembers), //Permission necessary to run the command (and see it on the server)
+
+	async execute(interaction, client) { // command instructions
+		const status = interaction.options.getString('status'); //read the user input
+		try {
+			client.user.setStatus(status); //set the new bot status
+			await interaction.reply(`My status is now: ${status}`) //send a message to the channel where the command was called
+		} catch (error) { //catch errors
+			console.error('An error occurred:', error);
+			await interaction.reply(`There was an error during the status change.`)
+		}
+	},
+};
+```
+
+
+
+ I really recommend you to read thee [official discord.js guide](https://discordjs.guide/#before-you-begin) to un
+
