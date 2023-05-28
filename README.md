@@ -57,22 +57,37 @@ To do that you can simply run the script "deploy-commands.js" present in the roo
 
 ![image](https://github.com/chromeosenjoyer/boten-anna/assets/134458207/aa350dbc-8f6f-4bbb-ba4c-24be2f0a62fe)
 
-You can deploy your commands just for a discord server, or to the entire application. By default the current register script deploys the commands just locally. If you want to deploy your commands to the entire Discord Application, you can just change the route on the **"deploy-commands.js"** from:
+You can deploy your commands just for one discord server, or to the enteire application. The register script present in this project deploys the commands just locally. If you want to deploy your commands to the entire discord application, you can just change the route on the **"deploy-commands.js"** from:
 
-![image](https://github.com/chromeosenjoyer/boten-anna/assets/134458207/a468c0f2-7481-4efb-a710-cc36fc51f1c1)
+```javascript
+	const data = await rest.put(
+		Routes.applicationGuildCommands(clientId, guildId),
+		{ body: commands },
+	);
+```
 
 To:
 
-![image](https://github.com/chromeosenjoyer/boten-anna/assets/134458207/62f2ab5e-b0bf-4866-ae55-a8ed2e292196)
+
+```javascript
+	const data = await rest.put(
+		Routes.applicationCommands(clientId),
+		{ body: commands },
+	);
+```
 
 
 **Important:** Everytime you change or create a new command for your bot you should run the script **"deploy-commands.js"** to make sure your command will execute the most recent instruction. It is recommended to create a new script to deploy your commands globally.
 
 ### - Start application
-To start the bot, you can simply run the command "node index.js"
+To start the bot, you can simply run the command:
+
+```bash
+node index.js
+```
 
 ![image](https://github.com/chromeosenjoyer/boten-anna/assets/134458207/c4abb15f-29e7-4c91-aed4-a949662e3699)
 
-If everything went well, you should see your bot online in your server.
+If everything went well, you should see your bot online on your discord server.
 
 ![image](https://github.com/chromeosenjoyer/boten-anna/assets/134458207/bb099016-b987-401b-8c0a-ba5ae924f817)
