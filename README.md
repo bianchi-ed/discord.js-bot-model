@@ -143,3 +143,17 @@ module.exports = {
 	},
 };
 ```
+
+And here is the execution of the command in the discord server:
+
+![image](https://github.com/chromeosenjoyer/boten-anna/assets/134458207/49ae416e-649a-4c47-9fcf-ec4d16456c23)
+
+![image](https://github.com/chromeosenjoyer/boten-anna/assets/134458207/610ce904-11bc-4138-a434-13790d91faf7)
+
+![image](https://github.com/chromeosenjoyer/boten-anna/assets/134458207/7c4a0998-523c-42b4-8917-8448ecd2a96d)
+
+![image](https://github.com/chromeosenjoyer/boten-anna/assets/134458207/9c5d664e-8f51-4fbe-bd74-9c2d44a41d8e)
+
+![image](https://github.com/chromeosenjoyer/boten-anna/assets/134458207/ac811e03-76d5-4224-99db-b5890b152910)
+
+
