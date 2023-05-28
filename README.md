@@ -4,7 +4,11 @@ Boten anna is a discord Bot template being developed using node.js in conjunctio
 
 The first goal of this project is to study and gain hands-on experience in node.js development and web development in general.
 
-The second goal is to explore the discord.js functionalities and provide a customizable Discord Bot template that includes fundamental moderation and utility commands. Additionally, it contains a dynamic folder structure, which promotes better organization of commands and events for enhanced usability. This template also creates a workspace that simplifies the implementation and maintenance of new commands, ensuring ease of adaptability.
+The secondary purpose of this project is to provide a versatile and well-structured skeleton code for building your own Discord bot. With a modular architecture, you can easily organize and customize the bot to suit different server contexts and requirements. The provided command model simplifies the creation and management of commands, allowing you to develop new functionalities tailored specifically to your server's needs.
+
+This model already includes some commonly used moderation and utility commands, providing a starting point for your bot's functionality and allowing you the freedom to create new commands that integrate into diverse server contexts.
+
+As a study case, I will continue to create new commands that may fit different discord server contexts.
 
 ## Pre-Requisites
 
@@ -95,3 +99,14 @@ node index.js
 If everything went well, you should see your bot online on your discord server.
 
 ![image](https://github.com/chromeosenjoyer/boten-anna/assets/134458207/bb099016-b987-401b-8c0a-ba5ae924f817)
+
+### SlashCommandBuilder
+In this project we are using the class SlashCommandBuilder to create our commands. Its a very nice way to implement new commands since the class provides various methods to customize and configure our commads. It is very well presented on discord as you can see here:
+
+![image](https://github.com/chromeosenjoyer/boten-anna/assets/134458207/4aa5cb19-cf83-4862-86a5-b801b5b245d5)
+
+![image](https://github.com/chromeosenjoyer/boten-anna/assets/134458207/7f043691-ec0a-4f64-b346-d38626625019)
+
+![image](https://github.com/chromeosenjoyer/boten-anna/assets/134458207/421024e1-7c57-4c15-b5c0-af17fc9752bf)
+
+![image](https://github.com/chromeosenjoyer/boten-anna/assets/134458207/0ec0133e-6ee9-4c98-ba51-c2925d9d1f70)
