@@ -100,7 +100,7 @@ If everything went well, you should see your bot online on your discord server.
 
 ![image](https://github.com/chromeosenjoyer/boten-anna/assets/134458207/bb099016-b987-401b-8c0a-ba5ae924f817)
 
-##Bot Usage
+## Bot Usage
 In this project we are using the class SlashCommandBuilder to create our commands. Its a very nice way to implement new commands since the class provides various methods to customize and configure our commads. It is very well presented on discord as you can see here:
 
 ![image](https://github.com/chromeosenjoyer/boten-anna/assets/134458207/4aa5cb19-cf83-4862-86a5-b801b5b245d5)
