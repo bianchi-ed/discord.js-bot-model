@@ -1,6 +1,6 @@
-# Boten Anna (README.MD in construction)
+# Discord.js Bot Model (README.MD in construction)
 
-Boten anna is a discord Bot template being developed using Node.js v18.16.0 and Discord.js v14. It was created based on the [Discord.js guide](https://discord.js.org/).
+This is a discord Bot template being developed using Node.js v18.16.0 and Discord.js v14. It was created based on the [Discord.js guide](https://discord.js.org/).
 
 The first goal of this project is to study and gain hands-on experience in node.js development and web development in general.
 
@@ -51,7 +51,7 @@ You can find your token, applicationId on the discord application page. The guil
 Now that we have finished the basic setup, we can start the bot. To do that, follow the steps:
 
 ### - Register bot commands
-If you have created a new Discord Application, you should register the commands that comes with boten anna locally, or globally.
+If you have created a new Discord Application, you should register the commands that comes with this project, locally or globally.
 
 To do that you can simply run the script "deploy-commands.js" present in the root folder of the project.
 
