@@ -8,7 +8,7 @@ module.exports = {
 		.setDefaultMemberPermissions(PermissionFlagsBits.BanMembers),
 	async execute(interaction) {
 		//read input
-		const user = interaction.options.getMember('target-user');
+		const user = interaction.options.getMember('target-user')
 		
 		//ban
 		await user.ban().catch(err => {

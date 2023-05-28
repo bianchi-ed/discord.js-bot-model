@@ -12,7 +12,7 @@ module.exports = {
 		.setDefaultMemberPermissions(PermissionFlagsBits.BanMembers),
 
 	async execute(interaction, client) {
-		const name = interaction.options.getString('name');
+		const name = interaction.options.getString('name')
 		try {
 			client.user.setUsername(name);
 			await interaction.reply(`My name was changed.`)

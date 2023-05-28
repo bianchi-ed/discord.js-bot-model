@@ -8,7 +8,7 @@ module.exports = {
 		.setDefaultMemberPermissions(PermissionFlagsBits.KickMembers),
 	async execute(interaction) {
 		//Fetch user information
-		const user = interaction.options.getMember('target-user');
+		const user = interaction.options.getMember('target-user')
 		
 		//kick target member
 		await user.kick().catch(err => {

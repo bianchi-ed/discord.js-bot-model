@@ -24,8 +24,8 @@ module.exports = {
 		.setDefaultMemberPermissions(PermissionFlagsBits.BanMembers),
 
 	async execute(interaction, client) {
-		const activity = interaction.options.getString('activity');
-        const title = interaction.options.getString('title');
+		const activity = interaction.options.getString('activity')
+        const title = interaction.options.getString('title')
         var typeActivity
         
         //this looks weird, change to a activity map and iterate later
