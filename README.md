@@ -33,9 +33,9 @@ In case you do not know how to create a Discord Application, I recommend reading
 Invite your new (assuming that you just created one) bot to your discrod channel using the invite url present on the Discord Application page. If you do not know what is an invite url, or how to get one, check out this topic from the discord.js guide: [Adding your bot to servers](https://discordjs.guide/preparations/adding-your-bot-to-servers.html#bot-invite-links).
 
 ## Configuration File
-config.json is used to store data that you probably would not like to share. 
+config.json is used to store data that you probably would not like to share. Since the config.json contains sensitive information it is listed on git.ignore. 
 
-Since the config.json contains sensitive information it is listed on git.ignore. The first thing you need to do after the initial Node.js setup is to create a file named **"config.json"** in the root folder of the project and populate it with the following information. this is also a good place to store information such as API keys.
+The first thing you need to do after the initial Node.js setup is to create a file named **"config.json"** in the root folder of the project and populate it with the following information. this is also a good place to store information such as API keys.
 
 ```json
 {
