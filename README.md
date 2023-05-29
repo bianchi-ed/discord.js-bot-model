@@ -147,27 +147,7 @@ module.exports = {
 
 And here is the execution of the command in the discord server:
 
-1. Call the command
-
-![image](https://github.com/chromeosenjoyer/boten-anna/assets/134458207/49ae416e-649a-4c47-9fcf-ec4d16456c23)
-
-
-2. Choose parameters
-
-![image](https://github.com/chromeosenjoyer/boten-anna/assets/134458207/610ce904-11bc-4138-a434-13790d91faf7)
-
-
-![image](https://github.com/chromeosenjoyer/boten-anna/assets/134458207/7c4a0998-523c-42b4-8917-8448ecd2a96d)
-
-
-3. Press enter
-
-![image](https://github.com/chromeosenjoyer/boten-anna/assets/134458207/9c5d664e-8f51-4fbe-bd74-9c2d44a41d8e)
-
-
-4. Check bot status
-
-![image](https://github.com/chromeosenjoyer/boten-anna/assets/134458207/ac811e03-76d5-4224-99db-b5890b152910)
+![ezgif com-video-to-gif (1)](https://github.com/bianchi-ed/discord.js-bot-model/assets/134458207/09e33af6-5e3d-4881-9f18-a5fcb576587e)
 
 ## Handling events
 
