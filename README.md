@@ -108,31 +108,35 @@ This is where you can get creative. The discord.js class SlashCommandBuilder pro
 Here is an example of a command to change the bot's current status on the discord server:
 
 ```javascript
+const { SlashCommandBuilder, PermissionFlagsBits} = require('discord.js');
+
 module.exports = {
-	data: new SlashCommandBuilder() 
-		.setName('bot-status') // Name that will be used to execute the command on discord (ex: /bot-status)
-		.setDescription('Set bot status.') // Description of the command 
-		.addStringOption(option => option // Optional String parameter, it can have other types
-			.setName('status') // Name of the parameter
-			.setDescription('Change the status of the bot.') // Parameter description
-			.setRequired(true) //If it is necessary to input this parameter in order to execute the command
-			.addChoices( //limite the input to these values:
+	data: new SlashCommandBuilder()
+		.setName('bot-status')
+		.setDescription('Set bot status.')
+		.addStringOption(option => option
+			.setName('status')
+			.setDescription('Change the status of the bot.')
+			.setRequired(true)
+			.addChoices(
 				{ name: 'online', value: 'online' },
 				{ name: 'idle', value: 'idle' },
 				{ name: 'dnd', value: 'dnd' },
 				{ name: 'invisible', value: 'invisible' },
 			)
 		)
-		.setDefaultMemberPermissions(PermissionFlagsBits.BanMembers), //Permission necessary to run the command (and see it on the server)
+		.setDefaultMemberPermissions(PermissionFlagsBits.BanMembers),
 
-	async execute(interaction, client) { // command instructions
-		const status = interaction.options.getString('status'); //read the user input
+	async execute(interaction, client) {
+		const status = interaction.options.getString('status')
 		try {
-			client.user.setStatus(status); //set the new bot status
-			await interaction.reply(`My status is now: ${status}`) //send a message to the channel where the command was called
-		} catch (error) { //catch errors
+			await Promise.all([
+				client.user.setStatus(status),
+				interaction.reply(`My status is now: ${status}`)
+			]);
+		} catch (error) {
 			console.error('An error occurred:', error);
-			await interaction.reply(`There was an error during the status change.`)
+			await interaction.reply('There was an error during the status change.')
 		}
 	},
 };
