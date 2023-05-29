@@ -15,7 +15,7 @@ module.exports = {
 				{ name: 'invisible', value: 'invisible' },
 			)
 		)
-		.setDefaultMemberPermissions(PermissionFlagsBits.BanMembers),
+		.setDefaultMemberPermissions(PermissionFlagsBits.Administrator),
 
 	async execute(interaction, client) {
 		const status = interaction.options.getString('status')

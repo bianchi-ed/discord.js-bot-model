@@ -5,7 +5,7 @@ module.exports = {
     	.setName('kick')
     	.setDescription('Kick a member.')
     	.addUserOption(option => option.setName('target-user').setDescription('Target user'))
-    	.setDefaultMemberPermissions(PermissionFlagsBits.KickMembers),
+    	.setDefaultMemberPermissions(PermissionFlagsBits.Administrator),
 
 	async execute(interaction) {
 		try {

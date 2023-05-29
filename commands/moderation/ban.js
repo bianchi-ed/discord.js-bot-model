@@ -5,7 +5,7 @@ module.exports = {
 		.setName('ban')
 		.setDescription('Ban a member.')
 		.addUserOption(option => option.setName('target-user').setDescription('Target user'))
-		.setDefaultMemberPermissions(PermissionFlagsBits.BanMembers),
+		.setDefaultMemberPermissions(PermissionFlagsBits.Administrator),
 
 	async execute(interaction) {
 		try {

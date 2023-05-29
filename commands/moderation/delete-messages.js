@@ -5,7 +5,7 @@ module.exports = {
     	.setName('delete-messages')
     	.setDescription('delete up to 99 messages.')
     	.addIntegerOption(option => option.setName('amount').setDescription('Number of messages to prune'))
-    	.setDefaultMemberPermissions(PermissionFlagsBits.BanMembers),
+    	.setDefaultMemberPermissions(PermissionFlagsBits.Administrator),
 
 	async execute(interaction) {
     	const amount = interaction.options.getInteger('amount')

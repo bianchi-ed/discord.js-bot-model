@@ -21,7 +21,7 @@ module.exports = {
 			.setDescription('What are you Streaming/Playing/Listening.')
 			.setRequired(true)
 		)
-		.setDefaultMemberPermissions(PermissionFlagsBits.BanMembers),
+		.setDefaultMemberPermissions(PermissionFlagsBits.Administrator),
 
 	async execute(interaction, client) {
 		const activity = interaction.options.getString('activity')

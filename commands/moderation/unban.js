@@ -5,7 +5,7 @@ module.exports = {
     	.setName('unban')
     	.setDescription('Unban a member.')
     	.addUserOption(option => option.setName('target-user').setDescription('Target user'))
-    	.setDefaultMemberPermissions(PermissionFlagsBits.BanMembers),
+    	.setDefaultMemberPermissions(PermissionFlagsBits.Administrator),
 
   	async execute(interaction) {
     	try {

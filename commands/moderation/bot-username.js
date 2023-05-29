@@ -9,7 +9,7 @@ module.exports = {
 			.setDescription('New bot name.')
 			.setRequired(true)
 		)
-		.setDefaultMemberPermissions(PermissionFlagsBits.BanMembers),
+		.setDefaultMemberPermissions(PermissionFlagsBits.Administrator),
 
 	async execute(interaction, client) {
 		const name = interaction.options.getString('name')
