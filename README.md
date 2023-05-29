@@ -8,7 +8,7 @@ In addition to its primary objective, this project aims to offer a fully functio
 
 This project contains pre-existing moderation and utility commands constructed using the discord.js SlashCommandBuilder class. These commands not only serve as a starting point for your bot's functionality but can also be easily modified/adapted to create and customize new commands according to your server's specific requirements. The pre-existing commands also serve as a template to create new commands. 
 
-Here is an example of the **"/avatar pre-existing"** command, that was created using the SlashCommandBuilder class:
+Here is an example of the **"/avatar"** pre-existing command execution, that was created using the SlashCommandBuilder class:
 ![ezgif com-video-to-gif](https://github.com/bianchi-ed/discord.js-bot-model/assets/134458207/7c204e18-0d02-4bfe-803c-e7f5712416d8)
 
 
