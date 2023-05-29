@@ -13,7 +13,7 @@ This project already contains some commonly used moderation and utility commands
 ### - Node & Libs
 This project uses Node.js in conjunction with discord.js and axios. It is possible to [Download Node.js from the official website](https://nodejs.org/en/download).
 
-After downloading and installing node.js be sure to navigate to the project root folder and run the following command to install the necessary dependencies:
+After downloading and installing node.js clone the project and be sure to navigate to the root folder and run the following command to install the necessary dependencies:
 
 ```bash
 #Run the command on the project root folder
