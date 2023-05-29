@@ -32,30 +32,33 @@ module.exports = {
         try {
             switch (activity) {
                 case "Watching":
-                    var typeActivity = ActivityType.Watching
+                    typeActivity = ActivityType.Watching
                     break;
 
                 case "Playing":
-                    var typeActivity = ActivityType.Playing
+                    typeActivity = ActivityType.Playing
                     break;
 
                 case "Streaming":
-                    var typeActivity = ActivityType.Streaming
+                    typeActivity = ActivityType.Streaming
                     break;
 
                  case "Listening":
-                    var typeActivity = ActivityType.Listening
+                    typeActivity = ActivityType.Listening
                     break;
 
                 case "Competing":
-                    var typeActivity = ActivityType.Competing
+                    typeActivity = ActivityType.Competing
                     break;
             
                 default:
                     break;
             }
-            client.user.setActivity(title, { type: typeActivity });
-            await interaction.reply(`My activity was changed. I am now ${activity}: ${title}`)
+
+            await Promise.all([
+				client.user.setActivity(title, { type: typeActivity }),
+				interaction.reply(`My activity was changed. I am now ${activity}: ${title}`)
+			]);	
             
 		} catch (error) {
             console.log(error)

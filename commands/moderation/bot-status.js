@@ -18,13 +18,15 @@ module.exports = {
 		.setDefaultMemberPermissions(PermissionFlagsBits.BanMembers),
 
 	async execute(interaction, client) {
-		const status = interaction.options.getString('status');
+		const status = interaction.options.getString('status')
 		try {
-			client.user.setStatus(status);
-			await interaction.reply(`My status is now: ${status}`)
+			await Promise.all([
+				client.user.setStatus(status),
+				interaction.reply(`My status is now: ${status}`)
+			]);
 		} catch (error) {
 			console.error('An error occurred:', error);
-			await interaction.reply(`There was an error during the status change.`)
+			await interaction.reply('There was an error during the status change.')
 		}
 	},
 };

@@ -14,8 +14,11 @@ module.exports = {
 	async execute(interaction, client) {
 		const name = interaction.options.getString('name')
 		try {
-			client.user.setUsername(name);
-			await interaction.reply(`My name was changed.`)
+			await Promise.all([
+				client.user.setUsername(name),
+				interaction.reply(`My name was changed.`)
+			]);	
+			
 		} catch (error) {
 			await interaction.reply(`There was an error while changing the bot name`)
 		}
