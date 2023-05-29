@@ -149,9 +149,9 @@ And here is the execution of the command in the discord server:
 
 ![ezgif com-video-to-gif (1)](https://github.com/bianchi-ed/discord.js-bot-model/assets/134458207/09e33af6-5e3d-4881-9f18-a5fcb576587e)
 
-## Handling events
+## Events
 
-Discord.js allows to handle certain events such as a creation of a channel, or the moment when the bot goes online. Check out the entire [list of events from the discord.js docs](https://old.discordjs.dev/#/docs/discord.js/main/typedef/Events)
+Discord.js allows you to handle certain events such as a creation of a channel, or the moment when the bot goes online. Check out the entire [list of events from the discord.js docs](https://old.discordjs.dev/#/docs/discord.js/main/typedef/Events)
 
 In this project, similar to commands, you can create individual .js files to handle events. The event files should be created on the "events" folder.
 
