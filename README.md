@@ -4,14 +4,13 @@ This is a discord bot template being developed using Node.js v18.16.0 and Discor
 
 The first goal of this project is to study and gain hands-on experience in node.js development and web development in general.
 
-In addition to its primary objective, this project aims to offer a fully functional bot model, enabling you to easily develop your own Discord bot commads, event handlers and more. It contains a modular structure, so you can easily organize and customize the bot to suit different server requirements.
+In addition to its primary objective, this project aims to offer a customizable discord bot, enabling you to easily develop your own bot commads, integrations, event handlers and more. It contains a modular structure, so you can easily organize and customize the bot to suit different server requirements.
 
-This project contains pre-existing moderation and utility commands constructed using the discord.js SlashCommandBuilder class. These commands not only serve as a starting point for your bot's functionality but can also be easily modified/adapted to create and customize new commands according to your server's specific requirements. The pre-existing commands also serve as a template to create new commands. 
+This project contains pre-existing moderation and utility commands constructed using the discord.js SlashCommandBuilder class. These commands not only serve as a starting point for your bot's functionality but can also be easily modified/adapted to create and customize new commands according to your server's specific requirements. The pre-existing commands also serve as a template to help creating new commands. 
 
 Here is an example of the execution of a pre-existing command created using the SlashCommandBuilder class. In this case, the command fetches target user's avatar and send it to the channel where the command was called.
 
 ![ezgif com-video-to-gif](https://github.com/bianchi-ed/discord.js-bot-model/assets/134458207/7c204e18-0d02-4bfe-803c-e7f5712416d8)
-
 
 ## Pre-Requisites
 
