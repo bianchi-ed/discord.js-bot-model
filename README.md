@@ -13,15 +13,12 @@ This project already contains some commonly used moderation and utility commands
 ### - Node & Libs
 This project uses Node.js in conjunction with discord.js and axios. It is possible to [Download Node.js from the official website](https://nodejs.org/en/download).
 
-After downloading and installing node.js be sure to install discord.js and axios:
+After downloading and installing node.js be sure to navigate to the project folder and run the following command to install the necessary dependencies:
 
 ```bash
-$ npm install discord.js
-```
-and
+#Run the command on the project root folder
 
-```bash
-$ npm install axios
+$ npm install
 ```
 
 ### - Discord Application
