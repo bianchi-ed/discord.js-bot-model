@@ -99,13 +99,15 @@ If everything went well, you should see your bot online on your discord server.
 ![image](https://github.com/chromeosenjoyer/boten-anna/assets/134458207/bb099016-b987-401b-8c0a-ba5ae924f817)
 
 ## Creating new commands
-To create a new command you can just create a .js file inside one of the command categories folder, you can also create new category folders if you so choose. In this template we are using the class SlashCommandBuilder to create our commands. Its a very nice way to implement new commands since the class provides various methods to customize and configure commands.
+To create a new command you can just create a .js file inside one of the command categories folder, you can also create new category folders if you so choose.
 
 ![image](https://github.com/chromeosenjoyer/boten-anna/assets/134458207/c4bf1cf0-ae38-4e8e-8df1-362506132417)
 
 After you have created the .js file, you can write your own instructions. 
 
-This is where you can get creative. The discord.js class SlashCommandBuilder provides a set of methods so you can create very customizable commands. You can find more about the SlashCommand class [in this link from discord.js docs](https://old.discordjs.dev/#/docs/builders/main/class/SlashCommandBuilder).
+This is where you can get creative. In this template we are using the class SlashCommandBuilder to create our commands. Its a very nice way to implement new commands since the class provides various methods to customize and configure commands. You can find more about the SlashCommand class [in this link from discord.js docs](https://old.discordjs.dev/#/docs/builders/main/class/SlashCommandBuilder).
+
+**Important: Everytime you change or create a new command for your bot you should run the script **"deploy-commands.js"** to make sure your command will execute the most recent instruction. It is recommended to create a new script to deploy your commands globally.**
 
 Here is an example of a command to change the bot's current status on the discord server:
 
