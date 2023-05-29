@@ -16,7 +16,7 @@ This project uses Node.js in conjunction with discord.js and axios. It is possib
 After downloading and installing node.js clone the project and be sure to navigate to the root folder and run the following command to install the necessary dependencies:
 
 ```bash
-#Run the command on the project root folder
+#Run the command on the project's root folder
 
 $ npm install
 ```
