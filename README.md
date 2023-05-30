@@ -11,7 +11,7 @@ This project contains pre-existing moderation and utility commands constructed u
 ### Node & Libs
 We are using Node.js in conjunction with discord.js. It is possible to [Download Node.js from the official website](https://nodejs.org/en/download).
 
-After downloading and installing node.js, clone the project, navigate to the root folder and run the following command to install the necessary dependencies:
+Clone the project, and run:
 
 ```bash
 #Run the command on the project's root folder
