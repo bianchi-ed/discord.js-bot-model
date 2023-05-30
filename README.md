@@ -85,11 +85,9 @@ node index.js
 ## Creating new commands
 To create a new command you can just create a new .js file inside one of the command categories folder and write the command instruction, you can also create new category folders if you so choose.
 
-In this template we are using the class SlashCommandBuilder to create our commands. Its a very nice way to implement new commands since the class provides various methods to customize and configure commands. 
+In this template we are using the class SlashCommandBuilder to create our commands. Its a very nice way to implement new commands since the class provides various methods to customize and configure commands. You can find more about the SlashCommand class [in this link from discord.js docs](https://old.discordjs.dev/#/docs/builders/main/class/SlashCommandBuilder).
 
-You can find more about the SlashCommand class [in this link from discord.js docs](https://old.discordjs.dev/#/docs/builders/main/class/SlashCommandBuilder).
-
-This skeleton code is a good start for a new slash command:
+This skeleton code is a nice starting point to create a new slash command:
 
 ```javascript
 const { SlashCommandBuilder, PermissionFlagsBits } = require('discord.js');
