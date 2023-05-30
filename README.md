@@ -2,15 +2,9 @@
 
 This is a discord bot template being developed using Node.js v18.16.0 and Discord.js v14. It was created based on the [Discord.js guide](https://discord.js.org/).
 
-The first goal of this project is to study and gain hands-on experience in node.js development and web development in general.
+This project aims to offer a customizable discord bot, enabling you to easily develop your own bot commads, integrations, event handlers and more. It contains a modular structure, so you can easily organize and customize the bot to suit different server requirements.
 
-In addition to it's primary objective, this project aims to offer a customizable discord bot, enabling you to easily develop your own bot commads, integrations, event handlers and more. It contains a modular structure, so you can easily organize and customize the bot to suit different server requirements.
-
-This project contains pre-existing moderation and utility commands constructed using the discord.js SlashCommandBuilder class. These commands not only serve as a starting point for your bot's functionality but can also be easily modified/adapted to create and customize new commands according to your server's specific requirements. The pre-existing commands also serve as a template to help creating new commands. 
-
-Here is an example of the execution of a pre-existing command created using the SlashCommandBuilder class. In this case, the command gets target user's avatar and send it to the channel where the command was called.
-
-![ezgif com-video-to-gif](https://github.com/bianchi-ed/discord.js-bot-model/assets/134458207/7c204e18-0d02-4bfe-803c-e7f5712416d8)
+This project contains pre-existing moderation and utility commands constructed using the discord.js SlashCommandBuilder class.
 
 ## Pre-Requisites
 
@@ -26,12 +20,10 @@ $ npm install
 ```
 
 ### - Discord Application
-The first step to set up the Bot is to create a Discord Application, if you already have a Discord Application created you can skip this sub-topic. 
-
-In case you do not know how to create a Discord Application, I recommend reading this step from the Discord.js Guide: [Setting up a bot application](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot).
+In case you do not know how to create a Discord Application, check out this step from the Discord.js Guide: [Setting up a bot application](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot).
 
 ### - Invite your Bot (Discord Application) to your discord server
-Invite your new (assuming that you just created one) bot to your discrod channel using the invite url present on the Discord Application page. If you do not know what is an invite url, or how to get one, check out this topic from the discord.js guide: [Adding your bot to servers](https://discordjs.guide/preparations/adding-your-bot-to-servers.html#bot-invite-links).
+If you do not know what is an invite url, or how to get one, check out this topic from the discord.js guide: [Adding your bot to servers](https://discordjs.guide/preparations/adding-your-bot-to-servers.html#bot-invite-links).
 
 ## Configuration File
 config.json is used to store data that you probably would not like to share. Since the config.json contains sensitive information it is listed on git.ignore. 
@@ -49,18 +41,15 @@ The first thing you need to do after the initial Node.js setup is to create a fi
 You can find your token, applicationId on the discord application page. The guildId is the ID of the Discord server.
 
 ## Firing up the Bot
-Now that we have finished the basic setup, we can start the bot. To do that, follow the steps:
 
 ### - Register bot commands
-If you have created a new Discord Application, you should register the commands that comes with this project, locally or globally.
-
-To do that you can simply run the script "deploy-commands.js" present in the root folder of the project.
+After cloning the project, you should register the commands that already come with this model. To do that you can simply run the script "deploy-commands.js" present in the root folder of the project.
 
 ```base
 node deploy-commands.js
 ```
 
-You can deploy your commands just for one discord server, or to the entire application. The register script present in this project deploys the commands just locally. If you want to deploy your commands to the entire discord application, you can just change the route on the **"deploy-commands.js"** from:
+You can deploy your commands just for one discord server, or for all server that the bot is invited. The register script present in this project deploys the commands just locally. If you want to deploy your commands to the entire discord application, you can just change the route on the **"deploy-commands.js"** from:
 
 ```javascript
 //...
@@ -83,9 +72,6 @@ const data = await rest.put(
 //...
 ```
 
-
-**Important:** Everytime you change or create a new command for your bot you should run the script **"deploy-commands.js"** to make sure your command will execute the most recent instruction. It is recommended to create a new script to deploy your commands globally.
-
 ### - Start application
 To start the bot, you can simply run the command:
 
@@ -93,84 +79,45 @@ To start the bot, you can simply run the command:
 node index.js
 ```
 
-If everything went well, you should see your bot online on your discord server.
-
-![image](https://github.com/chromeosenjoyer/boten-anna/assets/134458207/bb099016-b987-401b-8c0a-ba5ae924f817)
-
 ## Creating new commands
-To create a new command you can just create a .js file inside one of the command categories folder, you can also create new category folders if you so choose.
+To create a new command you can just create a new .js file inside one of the command categories folder and write the command instruction, you can also create new category folders if you so choose.
 
-![image](https://github.com/chromeosenjoyer/boten-anna/assets/134458207/c4bf1cf0-ae38-4e8e-8df1-362506132417)
+In this template we are using the class SlashCommandBuilder to create our commands. Its a very nice way to implement new commands since the class provides various methods to customize and configure commands. You can find more about the SlashCommand class [in this link from discord.js docs](https://old.discordjs.dev/#/docs/builders/main/class/SlashCommandBuilder).
 
-After you have created the .js file, you can write your own instructions. 
-
-This is where you can get creative. In this template we are using the class SlashCommandBuilder to create our commands. Its a very nice way to implement new commands since the class provides various methods to customize and configure commands. You can find more about the SlashCommand class [in this link from discord.js docs](https://old.discordjs.dev/#/docs/builders/main/class/SlashCommandBuilder).
-
-**Important**: Everytime you change or create a new command for your bot you should run the script **"deploy-commands.js"** to make sure your command will execute the most recent instruction. It is recommended to create a new script to deploy your commands globally.
-
-Here is an example of a command to change the bot's current status on the discord server:
+This skeleton code is a good start for a new slash command:
 
 ```javascript
-const { SlashCommandBuilder, PermissionFlagsBits} = require('discord.js');
+//...
+const { SlashCommandBuilder, PermissionFlagsBits } = require('discord.js');
 
 module.exports = {
 	data: new SlashCommandBuilder()
-		.setName('bot-status')
-		.setDescription('Set bot status.')
-		.addStringOption(option => option
-			.setName('status')
-			.setDescription('Change the status of the bot.')
-			.setRequired(true)
-			.addChoices(
-				{ name: 'online', value: 'online' },
-				{ name: 'idle', value: 'idle' },
-				{ name: 'dnd', value: 'dnd' },
-				{ name: 'invisible', value: 'invisible' },
-			)
-		)
-		.setDefaultMemberPermissions(PermissionFlagsBits.BanMembers),
+    		.setName('command-name') // This will be the name used to execute the command. i.e /command-name
+    		.setDescription('Command description') // This description will appear when the command is called
+    		.add<Options>Option(option => option.setName('<option-name>').setDescription('<option-description>').setRequired(true|false)) // Add more options of different types if needed
+    		.setDefaultMemberPermissions(PermissionFlagsBits.Administrator), // Permission required to execute (and see) the command
 
-	async execute(interaction, client) {
-		const status = interaction.options.getString('status')
-		try {
-			await Promise.all([
-				client.user.setStatus(status),
-				interaction.reply(`My status is now: ${status}`)
-			]);
-		} catch (error) {
-			console.error('An error occurred:', error);
-			await interaction.reply('There was an error during the status change.')
-		}
-	},
+  	async execute(interaction) {
+    		try {
+		
+      			// Retrieve options from interaction
+      			const optionValue = interaction.options.<getOptionType>('option-name');
+		
+     	 		// Retrieve other necessary data if needed
+      			// Perform some command logic
+
+      			// Send a reply or perform other actions based on the command logic
+			interaction.reply(`The command was executed`)
+    		} catch (error) {
+      			console.error('An error occurred:', error);
+      			await interaction.reply({ content: 'There was an error while running the command.' });
+    		}
+  	},
 };
 ```
 
-And here is the execution of the command in the discord server:
+**Important**: Everytime you change or create a new command for your bot you should run the script **"deploy-commands.js"** to make sure your command will execute the most recent instruction. It is recommended to create a new script to deploy your commands globally.
 
-![ezgif com-video-to-gif (1)](https://github.com/bianchi-ed/discord.js-bot-model/assets/134458207/09e33af6-5e3d-4881-9f18-a5fcb576587e)
 
 ## Events
-
-Discord.js allows you to handle certain events such as a creation of a channel, or the moment when the bot goes online. Check out the entire [list of events from the discord.js docs](https://old.discordjs.dev/#/docs/discord.js/main/typedef/Events)
-
-In this project, similar to commands, you can create individual .js files to handle events. The event files should be created on the "events" folder.
-
-![image](https://github.com/chromeosenjoyer/boten-anna/assets/134458207/3114de45-66ab-4eb3-a59b-cf3abc873308)
-
-
-Here is an example of an event instruction that triggers when the bot goes online:
-
-```javascript
-
-//ready.js
-
-const { Events } = require('discord.js');
-
-module.exports = {
-	name: Events.ClientReady,
-	once: true,
-	execute(client) {
-		console.log(`Ready! Logged in as ${client.user.tag}`);
-	},
-};
-```
+Similar to commands, you can create individual .js files to handle events, except that there are no category folders this time. The event files should be created on the "events" folder. [Read more about events in this topic from discord.js docs](https://old.discordjs.dev/#/docs/discord.js/main/typedef/Events)
