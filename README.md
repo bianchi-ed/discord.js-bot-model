@@ -38,7 +38,7 @@ Create a file names "config.json" on the root folder of the project and populate
 
 You can find your token, applicationId on the discord application page. The guildId is the ID of the Discord server.
 
-## Firing up the Bot
+## Starting the bot
 
 ### Register bot commands
 Before starting the bot you should register the commands that already come with this model. To do that you can simply run the script "deploy-commands.js" present in the root folder of the project.
