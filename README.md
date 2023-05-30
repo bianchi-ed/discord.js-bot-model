@@ -25,20 +25,18 @@ In case you do not know how to create a Discord Application, check out this step
 ### - Invite your Bot (Discord Application) to your discord server
 If you do not know what is an invite url, or how to get one, check out this topic from the discord.js guide: [Adding your bot to servers](https://discordjs.guide/preparations/adding-your-bot-to-servers.html#bot-invite-links).
 
-## Configuration File
-config.json is used to store data that you probably would not like to share. Since the config.json contains sensitive information it is listed on git.ignore. 
-
-The first thing you need to do after the initial Node.js setup is to create a file named **"config.json"** in the root folder of the project and populate it with the following information. this is also a good place to store information such as API keys.
+### - Set config.json
+Create a file names "config.json" on the root folder of the project and populate it with the following information.
 
 ```json
-{
+{	
+	// You can find your token, applicationId on the discord application page. The guildId is the ID of the Discord server.
+	
 	"token": "Your bot Token goes here",
 	"clientId": "Your Discord Application application ID goes here",
 	"guildId": "This is your Discord server ID "
 }
 ```
-
-You can find your token, applicationId on the discord application page. The guildId is the ID of the Discord server.
 
 ## Firing up the Bot
 
@@ -49,14 +47,16 @@ Before starting the bot you should register the commands that already come with 
 node deploy-commands.js
 ```
 
-You can deploy your commands just for one discord server, or for all server that the bot is invited. The register script present in this project deploys the commands just locally. If you want to deploy your commands to the entire discord application, you can just change the route on the **"deploy-commands.js"** from:
+If you want to deploy your commands to all servers that the bot is invited, you can just change the route on the **"deploy-commands.js"** from:
 
 ```javascript
 //...
+
 const data = await rest.put(
 	Routes.applicationGuildCommands(clientId, guildId),
 	{ body: commands },
 );
+
 //...
 ```
 
@@ -65,10 +65,13 @@ To:
 
 ```javascript
 //...
+
+// It is a good idea to create a separated deploy-commands.js to deploy your commands globally
 const data = await rest.put(
 	Routes.applicationCommands(clientId),
 	{ body: commands },
 );
+
 //...
 ```
 
@@ -87,23 +90,18 @@ In this template we are using the class SlashCommandBuilder to create our comman
 This skeleton code is a good start for a new slash command:
 
 ```javascript
-//...
 const { SlashCommandBuilder, PermissionFlagsBits } = require('discord.js');
-
 module.exports = {
 	data: new SlashCommandBuilder()
     		.setName('command-name') // This will be the name used to execute the command. i.e /command-name
     		.setDescription('Command description') // This description will appear when the command is called
     		.add<Options>Option(option => option.setName('<option-name>').setDescription('<option-description>').setRequired(true|false)) // Add more options of different types if needed
     		.setDefaultMemberPermissions(PermissionFlagsBits.Administrator), // Permission required to execute (and see) the command
-
   	async execute(interaction) {
     		try {
-		
-      			// Retrieve options from interaction
+      			// Retrieve options from interaction and other necessary data if needed
       			const optionValue = interaction.options.<getOptionType>('option-name');
-		
-     	 		// Retrieve other necessary data if needed
+			
       			// Perform some command logic
 
       			// Send a reply or perform other actions based on the command logic
@@ -117,7 +115,6 @@ module.exports = {
 ```
 
 **Important**: Everytime you change or create a new command for your bot you should run the script **"deploy-commands.js"** to make sure your command will execute the most recent instruction. It is recommended to create a new script to deploy your commands globally.
-
 
 ## Events
 Similar to commands, you can create individual .js files to handle events, except that there are no category folders this time. The event files should be created on the "events" folder. [Read more about events in this topic from discord.js docs](https://old.discordjs.dev/#/docs/discord.js/main/typedef/Events)
