@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="[image.jpg](https://github.com/bianchi-ed/discord.js-bot-model/assets/134458207/ab9423de-af3f-4c9d-9c35-b15de0ac0edb)" alt="Image">
+  <img src="https://github.com/bianchi-ed/discord.js-bot-model/assets/134458207/ab9423de-af3f-4c9d-9c35-b15de0ac0edb" alt="Image">
 </p>
 This is a discord bot template being developed using Node.js v18.16.0 and Discord.js v14. It was created based on the [Discord.js guide](https://discord.js.org/).
 
