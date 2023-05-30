@@ -45,7 +45,9 @@ Before starting the bot you should register the commands that already come with 
 node deploy-commands.js
 ```
 
-If you want to deploy your commands to all servers that the bot is invited, you can just change the route on the **"deploy-commands.js"** from:
+If you want to deploy your commands to all servers that the bot is invited, you can just change the route on the **"deploy-commands.js"**
+
+from:
 
 ```javascript
 //...
