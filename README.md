@@ -9,7 +9,7 @@ This project contains pre-existing moderation and utility commands constructed u
 ## Pre-Requisites
 
 ### - Node & Libs
-This project uses Node.js in conjunction with discord.js and axios. It is possible to [Download Node.js from the official website](https://nodejs.org/en/download).
+We are using Node.js in conjunction with discord.js. It is possible to [Download Node.js from the official website](https://nodejs.org/en/download).
 
 After downloading and installing node.js, clone the project, navigate to the root folder and run the following command to install the necessary dependencies:
 
@@ -43,7 +43,7 @@ You can find your token, applicationId on the discord application page. The guil
 ## Firing up the Bot
 
 ### - Register bot commands
-After cloning the project, you should register the commands that already come with this model. To do that you can simply run the script "deploy-commands.js" present in the root folder of the project.
+Before starting the bot you should register the commands that already come with this model. To do that you can simply run the script "deploy-commands.js" present in the root folder of the project.
 
 ```base
 node deploy-commands.js
@@ -73,7 +73,7 @@ const data = await rest.put(
 ```
 
 ### - Start application
-To start the bot, you can simply run the command:
+To start the bot run the following command on the project root folder:
 
 ```bash
 node index.js
