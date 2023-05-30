@@ -30,13 +30,13 @@ Create a file names "config.json" on the root folder of the project and populate
 
 ```json
 {	
-	"_comment1": "You can find your token, applicationId on the discord application page. The guildId is the ID of the Discord server.",
-	
 	"token": "Your bot Token goes here",
 	"clientId": "Your Discord Application application ID goes here",
 	"guildId": "This is your Discord server ID "
 }
 ```
+
+You can find your token, applicationId on the discord application page. The guildId is the ID of the Discord server.
 
 ## Firing up the Bot
 
