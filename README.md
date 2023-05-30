@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="https://github.com/bianchi-ed/discord.js-bot-model/assets/134458207/ab9423de-af3f-4c9d-9c35-b15de0ac0edb" alt="Image">
-</p>
+
 This is a discord bot template being developed using Node.js v18.16.0 and Discord.js v14. It was created based on the [Discord.js guide](https://discord.js.org/).
 
 The project aims to offer a customizable discord bot, enabling you to easily develop your own bot commads, integrations, event handlers and more. It contains a modular structure, so you can easily organize and customize the bot to suit different server requirements. It also includes pre-existing moderation and utility commands constructed using the discord.js SlashCommandBuilder class.
