@@ -6,7 +6,7 @@ This is a discord bot template being developed using Node.js v18.16.0 and Discor
 
 The project aims to offer a functional bot in a modular structure so you can easily organize and customize the bot to suit different server requirements, enabling you to easily develop your own bot commads, integrations, event handlers and more. 
 
-It also includes pre-existing moderation and utility commands constructed using the discord.js SlashCommandBuilder class.
+It also includes pre-existing moderation and utility commands that may be useful in different discord server contexts.
 
 ## Pre-Requisites
 
