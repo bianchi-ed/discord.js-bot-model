@@ -14,10 +14,12 @@ module.exports = {
 			const targetRole = interaction.options.getRole('target-role');
 
 			if (user.roles.cache.has(targetRole.id)) {
+	
 				await Promise.all([
 					user.roles.remove(targetRole),
 					interaction.reply(`The role ${targetRole} was revoked from ${user}.`),
 				]);
+
 			}else{
 				await interaction.reply(`The user ${user} does not have the role: ${targetRole}.`)
 			}
