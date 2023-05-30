@@ -93,7 +93,7 @@ This skeleton code is a good start for a new slash command:
 const { SlashCommandBuilder, PermissionFlagsBits } = require('discord.js');
 module.exports = {
 	data: new SlashCommandBuilder()
-    		.setName('command-name') // This will be the name used to execute the command. i.e /command-name
+    		.setName('command-name') // This property should have the same name as your .js file (in this example it would be command-name.js)
     		.setDescription('Command description') // This description will appear when the command is called
     		.add<Options>Option(option => option.setName('<option-name>').setDescription('<option-description>').setRequired(true|false)) // Add more options of different types if needed
     		.setDefaultMemberPermissions(PermissionFlagsBits.Administrator), // Permission required to execute (and see) the command
