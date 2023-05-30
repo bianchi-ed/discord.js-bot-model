@@ -12,7 +12,7 @@ We are using Node.js in conjunction with discord.js. It is possible to [Download
 Clone the project, and run:
 
 ```bash
-#Run the command on the project's root folder
+#Run the command on project's root folder
 
 $ npm install
 ```
