@@ -93,6 +93,7 @@ This skeleton code is a good start for a new slash command:
 
 ```javascript
 const { SlashCommandBuilder, PermissionFlagsBits } = require('discord.js');
+
 module.exports = {
 	data: new SlashCommandBuilder()
     		.setName('command-name') // This property should have the same name as your .js file (in this example it would be command-name.js)
