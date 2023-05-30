@@ -30,7 +30,7 @@ Create a file names "config.json" on the root folder of the project and populate
 
 ```json
 {	
-	// You can find your token, applicationId on the discord application page. The guildId is the ID of the Discord server.
+	"_comment1": "You can find your token, applicationId on the discord application page. The guildId is the ID of the Discord server.",
 	
 	"token": "Your bot Token goes here",
 	"clientId": "Your Discord Application application ID goes here",
