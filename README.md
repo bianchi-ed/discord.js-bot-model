@@ -66,7 +66,6 @@ To:
 ```javascript
 //...
 
-// It is a good idea to create a separated deploy-commands.js to deploy your commands globally
 const data = await rest.put(
 	Routes.applicationCommands(clientId),
 	{ body: commands },
@@ -74,6 +73,8 @@ const data = await rest.put(
 
 //...
 ```
+
+It is a good idea to create a separated deploy-commands.js to register commands for all discord servers the bot is invited.
 
 ### Start application
 To start the bot run the following command on the project root folder:
