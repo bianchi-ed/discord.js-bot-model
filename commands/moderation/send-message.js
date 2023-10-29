@@ -15,7 +15,6 @@ module.exports = {
 
             await Promise.all([
                 targetChannel.send(messageContent),
-                interaction.reply('Message sent successfully.')
             ])
 
         } catch (error) {
