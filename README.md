@@ -78,10 +78,7 @@ const data = await rest.put(
 //...
 ```
 
-It is a good idea to create a separated deploy-commands.js to register commands for all discord servers the bot is invited.
-
 ### Start application
-To start the bot run the following command on the project root folder:
 
 ```bash
 node index.js
@@ -116,8 +113,6 @@ module.exports = {
   	},
 };
 ```
-
-**Important**: Everytime you change or create a new command you should run the script **"deploy-commands.js"**.
 
 ## Events
 Similar to commands, you can create individual .js files to handle events, except in this case there are no category folders. The event files should be created on the "events" folder. [Read more about events in this topic from discord.js docs](https://old.discordjs.dev/#/docs/discord.js/main/typedef/Events)
