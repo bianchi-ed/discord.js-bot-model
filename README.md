@@ -1,10 +1,6 @@
-<p align="center">
-  <img src="https://github.com/bianchi-ed/discord.js-bot-model/assets/134458207/11e38dd0-6d2a-4cfe-8796-cf7d4e8c780e" alt="Image" style="width: 60%;">
-</p>
+# discord.js-bot.model
 
-This is a discord bot template developed using Node.js v18.16.0 and Discord.js v14. It was created based on the [Discord.js guide](https://discord.js.org/).
-
-The project aims to provide a modular bot structure, allowing convenient organization and customization to meet diverse server needs.
+This project aims to provide a modular bot structure, allowing convenient organization and customization to meet diverse server needs. It was created based on the [Discord.js guide](https://discord.js.org/).
 
 ## Pre-Requisites
 
