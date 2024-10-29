@@ -1,28 +1,22 @@
-# discord.js-bot.model
+# discord.js-bot-model
 
-This project aims to provide a modular bot structure, allowing convenient organization and customization to meet diverse server needs. It was created based on the [Discord.js guide](https://discord.js.org/).
+This project aims to provide a modular discord bot structure, allowing convenient organization and customization to meet diverse server needs.
 
-## Pre-Requisites
+## Usage
 
-Clone the project, and run:
+### Clone project and install dependencies:
 
 ```bash
-#Run the command on project's root folder
-
 $ npm install
 ```
 
-## Starting the bot
-
-### Register bot commands
+### Register commands
 
 ```base
 node deploy-commands.js
 ```
 
-If you want to deploy your commands to all servers that the bot is invited, you can just change the route on the **"deploy-commands.js"**
-
-from:
+To deploy your commands to all servers that the bot is invited, you can just change the route in **"deploy-commands.js"** from:
 
 ```javascript
 //...
