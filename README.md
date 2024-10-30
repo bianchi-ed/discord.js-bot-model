@@ -56,9 +56,10 @@ node index.js
 ```
 
 ## Creating new commands
-To create a new command, create a new .js file inside one of the command categories folder and write the command instruction, you can also create new category folders if you so choose.
 
 This template uses the SlashCommandBuilder class, it is a nice way to implement new commands since the class provides various methods to customize and configure commands. I recommend reading more abou this topic [in this link from discord.js docs](https://old.discordjs.dev/#/docs/builders/main/class/SlashCommandBuilder).
+
+To create a new command, create a new .js file inside one of the command categories folder and write the command instruction, you can also create new category folders to categorize the commands.
 
 This skeleton code is a nice starting point to create a new slash command:
 
