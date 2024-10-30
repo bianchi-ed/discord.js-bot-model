@@ -27,10 +27,19 @@ const rest = new REST().setToken(token);
 	try {
 		console.log(`Started refreshing ${commands.length} application (/) commands.`);
 
+		// Register to a single server
 		const data = await rest.put(
 			Routes.applicationGuildCommands(clientId, guildId),
 			{ body: commands },
 		);
+
+		// Register commands to all servers
+		/* 
+		const data = await rest.put(
+			Routes.applicationCommands(clientId),
+			{ body: commands },
+		);
+		*/
 
 		console.log(`Successfully reloaded ${data.length} application (/) commands.`);
 	} catch (error) {

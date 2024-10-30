@@ -4,7 +4,7 @@ module.exports = {
 	data: new SlashCommandBuilder()
     	.setName('delete-messages')
     	.setDescription('delete up to 99 messages.')
-    	.addIntegerOption(option => option.setName('amount').setDescription('Number of messages to prune'))
+    	.addIntegerOption(option => option.setName('amount').setDescription('Number of messages to delete'))
     	.setDefaultMemberPermissions(PermissionFlagsBits.Administrator),
 
 	async execute(interaction) {
