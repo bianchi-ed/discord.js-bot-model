@@ -9,23 +9,39 @@ This project aims to provide a modular discord bot structure, allowing convenien
 ```bash
 $ npm install
 ```
-### Config.json file
-Create config.json file and set it with the following information: 
+
+### Create Discord Application
+In case you do not know how to create a Discord Application, check out this step from the Discord.js Guide: [Setting up a bot application](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot).
+
+### Invite your Bot (Discord Application) to your discord server
+If you do not know what is an invite url, or how to get one, check out this topic from the discord.js guide: [Adding your bot to servers](https://discordjs.guide/preparations/adding-your-bot-to-servers.html#bot-invite-links).
+
+### Set config.json
+Create a file names "config.json" on the root folder of the project and populate it with the following information.
 
 ```json
-{
-	"token": "discord.dev bot token",
-    "clientId": "discord.dev clientID (I believe its refered as application id as well in some of the discord.dev pages)",
-    "guildId": "Your discord server. Used to register commands to a single server"
+{	
+	"token": "Your bot Token goes here",
+	"clientId": "Your Discord Application application ID goes here",
+	"guildId": "This is your Discord server ID "
 }
 ```
-### Register commands
+
+You can find your token, applicationId on the discord application page. The guildId is the ID of the Discord server.
+
+## Starting the bot
+
+### Register bot commands
+Before starting the bot you should register the commands that already come with this model. To do that you can simply run the script "deploy-commands.js" present in the root folder of the project.
 
 ```base
 node deploy-commands.js
 ```
 
-To deploy your commands to all servers that the bot is invited, you can just change the route in **"deploy-commands.js"** from:
+If you want to deploy your commands to all servers that the bot is invited, you can just change the route on the **"deploy-commands.js"**
+
+from:
+
 ```javascript
 //...
 const data = await rest.put(
@@ -52,10 +68,11 @@ node index.js
 ```
 
 ## Creating new commands
+To create a new command you can just create a new .js file inside one of the command categories folder and write the command instruction, you can also create new category folders if you so choose.
 
-To create a new command create a .js file inside one of the command category folders. SlashcommandBuilder provides a nice structure for commands and in my opinion it is the best way to interact with bots. I recommend reading more about this topic to check all the options you can use. Only the command name and the description are mandatory fields. 
+In this template we are using the class SlashCommandBuilder to create our commands. Its a very nice way to implement new commands since the class provides various methods to customize and configure commands. You can find more about the SlashCommand class [in this link from discord.js docs](https://old.discordjs.dev/#/docs/builders/main/class/SlashCommandBuilder).
 
-Here is a simple skeleton code for a new command. I have implemented a few different simple commands to show some of the possibilities as well. 
+This skeleton code is a nice starting point to create a new slash command:
 
 ```javascript
 const { SlashCommandBuilder, PermissionFlagsBits } = require('discord.js');
@@ -64,6 +81,8 @@ module.exports = {
 	data: new SlashCommandBuilder()
     		.setName('command-name') //command name (same name as .js file)
     		.setDescription('command description') //command description
+    		.addStringOption(option => option.setName('parameters').setDescription('parameters')) //parameters (use multiple if necessary, they can be of other types)
+    		.setDefaultMemberPermissions(PermissionFlagsBits.Administrator), //permissions required to use the command
 
 	async execute(interaction) {
 		try {
