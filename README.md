@@ -57,9 +57,7 @@ node index.js
 
 ## Creating new commands
 
-This template uses the SlashCommandBuilder class, it is a nice way to implement new commands since the class provides various methods to customize and configure commands. I recommend reading more abou this topic [in this link from discord.js docs](https://old.discordjs.dev/#/docs/builders/main/class/SlashCommandBuilder).
-
-To create a new command, create a new .js file inside one of the command categories folder and write the command instruction, you can also create new category folders to categorize the commands.
+This template uses the SlashCommandBuilder class. To create a new command, create a new .js file inside one of the command categories folder and write the command instruction, you can also create new category folders to categorize the commands.
 
 This skeleton code is a nice starting point to create a new slash command:
 
@@ -82,4 +80,4 @@ module.exports = {
 ```
 
 ## Events
-Similar to commands, you can create individual .js files to handle events, except in this case there are no category folders. The event files should be created on the "events" folder. [Read more about events in this topic from discord.js docs](https://old.discordjs.dev/#/docs/discord.js/main/typedef/Events)
+Similar to commands, you can create individual .js files to handle events, except in this case there are no category folders.
